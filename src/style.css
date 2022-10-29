@@ -1,4 +1,18 @@
 /* 导入Tailwind */
 @tailwind base;
 @tailwind components;
+
+@layer components {
+
+  /* 背景圆形渐变色 */
+  .gradient-ellipse {
+    @apply bg-gradient-to-r from-[#75DAF3] via-[#4553F2] to-[#7623F5] filter
+  }
+
+
+
+}
+
+
+
 @tailwind utilities;
