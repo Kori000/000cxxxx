@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-28 17:15:36
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-29 14:13:28
+ * @LastEditTime: 2022-10-30 02:47:05
  * @FilePath: /portalverse_offcial/tailwind.config.cjs
  * @Description: 
  * 
@@ -11,6 +11,9 @@
 module.exports = {
   content: ["./src/index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
+    backgroundSize: {
+      '200%': '200%',
+    },
     extend: {
       height: {
         "9641.24px": "9641.24px"
@@ -21,6 +24,31 @@ module.exports = {
         "linear-light-start": "#7623F5",
         "linear-light-mid": "#4553F2",
         "linear-light-end": "#75DAF3",
+      },
+      backgroundImage: {
+        'logo-container': "url('@/assets/nav-logo-container.png')",
+      },
+      fontFamily: {
+        "Inter": ["Inter", "sans-serif"],
+        "Inter-400": ["Inter-400", "sans-serif"],
+        "Inter-500": ["Inter-500", "sans-serif"],
+        "Inter-700": ["Inter-700", "sans-serif"]
+      },
+      animation: {
+        "linear-color": "linearColor 5s linear infinite",
+      },
+      keyframes: {
+        linearColor: {
+          "0%": {
+            backgroundPosition: "0"
+          },
+          "50%": {
+            backgroundPosition: "100%"
+          },
+          "100%": {
+            backgroundPosition: "0"
+          }
+        }
       }
     }
   },

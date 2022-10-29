@@ -2,13 +2,13 @@
  * @Author: Kori
  * @Date: 2022-10-28 16:57:35
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-29 20:11:59
+ * @LastEditTime: 2022-10-29 21:48:24
  * @FilePath: /portalverse_offcial/src/App.vue
  * @Description: 
  * 
 -->
 <script setup>
-import MainPage from '@/view/HomeScreen/MainPage.vue'
+import MainPage from '@/view/HomeScreen/IndexPage.vue'
 </script>
 
 <template>

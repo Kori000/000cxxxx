@@ -2,14 +2,13 @@
  * @Author: Kori
  * @Date: 2022-10-29 12:19:38
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-29 21:19:52
- * @FilePath: /portalverse_offcial/src/components/BackGround.vue
+ * @LastEditTime: 2022-10-29 21:39:33
+ * @FilePath: /portalverse_offcial/src/components/BackGround/BackGround.vue
  * @Description: 
  * 
 -->
 <template>
   <div class="max-w-[1440px] relative ml-auto mr-auto" :style="{ backgroundColor: bool ? bgColor1 : bgColor2 }">
-    <button class="w-36 h-36 bg-purple-300 rounded-xl shadow-2xl" @click="toggle">变化</button>
     <!-- 球体 -->
     <div class="absolute top-[197px] right-[171px] z-10">
       <img src="@/assets/main-sphere.png">
@@ -19,6 +18,7 @@
       <img class="absolute bottom-[53px] -right-[105px]" src="@/assets/small-spheres.png">
     </div>
     <!-- 椭圆渐变块 -->
+    <!-- .gradient-sllipse---自定义tailwind -->
     <div class="absolute top-[7336px] left-[380px] 
       w-[751px] h-[789px] 
       gradient-ellipse 
@@ -88,11 +88,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-const bool = ref(true)
-const bgColor1 = ref('')
-const bgColor2 = ref('#0c0c0c')
-function toggle () {
-  bool.value = !bool.value
-}
+// import { ref } from 'vue';
+// const bool = ref(true)
+// const bgColor1 = ref('')
+// const bgColor2 = ref('#0c0c0c')
+// function toggle () {
+//   bool.value = !bool.value
+// }
 </script>

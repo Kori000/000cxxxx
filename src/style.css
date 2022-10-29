@@ -1,5 +1,30 @@
 /* 导入Tailwind */
 @tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: url(./assets/font/Inte.woff2);
+  }
+
+  @font-face {
+    font-family: "Inter-400";
+    src: url(./assets/font/Inter-400.woff2);
+  }
+
+  @font-face {
+    font-family: "Inter-500";
+    src: url(./assets/font/Inter-500.woff2);
+  }
+
+  @font-face {
+    font-family: "Inter-700";
+    src: url(./assets/font/Inter-700.woff2);
+  }
+}
+
+
+
 @tailwind components;
 
 @layer components {
@@ -9,10 +34,12 @@
     @apply bg-gradient-to-r from-[#75DAF3] via-[#4553F2] to-[#7623F5] filter
   }
 
+  /* NavigationBar通用样式 */
+  .nav-link {
+    @apply text-white font-medium text-xl font-Inter-500
+  }
 
 
 }
-
-
 
 @tailwind utilities;
