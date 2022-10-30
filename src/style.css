@@ -34,6 +34,11 @@
     @apply bg-gradient-to-r from-[#75DAF3] via-[#4553F2] to-[#7623F5] filter
   }
 
+  /* 字体流动色 */
+  .linear-color {
+    @apply text-transparent bg-gradient-to-r from-[#BBBBFF] via-[#ffffff] to-[#BBBBFF] bg-200% bg-clip-text
+  }
+
   /* NavigationBar通用样式 */
   .nav-link {
     @apply text-white font-medium text-xl font-Inter-500

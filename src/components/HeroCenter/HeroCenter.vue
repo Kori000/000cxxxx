@@ -2,29 +2,26 @@
  * @Author: Kori
  * @Date: 2022-10-29 21:54:44
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-30 03:58:19
+ * @LastEditTime: 2022-10-30 22:21:48
  * @FilePath: /portalverse_offcial/src/components/HeroCenter/HeroCenter.vue
  * @Description: 
  * 
 -->
 <template>
-  <div class="w-screen z-10 flex justify-center ">
-    <div class="fixed ">
-      <Navigation class="w-screen h-[104px] "></Navigation>
-    </div>
-    <div id="hero_container" class=" w-[1164.5px] h-[654px] mt-[243px] relative">
-      <div id="hero_main" class=" w-[700px] h-[551px] absolute top-0 left-0 flex flex-col ">
-        <h5 class="text-white font-medium font-Inter-500 text-[22px]">Portalverse Network</h5>
-        <!-- 动画 -->
-        <h1 class="text-[100px] font-bold font-Inter text-transparent bg-gradient-to-r from-[#BBBBFF] via-[#ffffff]  to-[#BBBBFF] 
-           bg-200% animate-linear-color bg-clip-text">
+  <div class="">
+    <div class=" lg:mx-36 mx-12 flex justify-center items-start flex-col  min-h-screen">
+      <!-- 主体内容 -->
+      <div id="hero_main" class=" w-full text-white  z-10 pt-52  max-w-2xl ">
+        <h5 class=" text-xl font-medium leading-6">Portalverse Network</h5>
+        <!-- 大标题+动画 -->
+        <h1
+          class=" text-8xl font-bold leading-[130px]  tracking-wide text-left linear-color animate-linear-color-animat">
           Decentralized Real-Time Cloud Gaming</h1>
-        <div
-          class="h-[64px] w-[541px] max-w-[541px] absolute bottom-0 left-0 flex justify-between items-center text-white font-bold font-Inter-700 text-lg">
-          <button class="w-[281px] h-[64px] 
+        <div id="btn_com" class=" flex mt-12 font-bold text-lg">
+          <button class="w-72 h-16 rounded-[20px] mr-2
           bg-gradient-to-r from-[#75DAF3] via-[#4553F2] to-[#7623F5] 
-           rounded-[20px]">Join Discord</button>
-          <button class="flex justify-evenly items-center w-[235px] h-[54px]">
+           ">Join Discord</button>
+          <button class="flex justify-evenly items-center w-60 h-14">
             <p>Read Whitepaper</p>
             <div class="">
               <img src="@/assets/svg/RightArrow.svg">
@@ -32,9 +29,10 @@
           </button>
         </div>
       </div>
-      <div id="hero_describe"
-        class=" w-[523px] h-[94px] absolute bottom-0 right-0 text-white font-Inter-500 font-semibold leading-[31px]  before:content-[' '] before:border-r before:border before:w-[84px] before:absolute before:top-[5px] before:left-0 before:rotate-90 before:origin-top-left before:mb-[10px]">
-        <h6 class="text-[26px] pl-[17px] ">Harnessing Distributed and Underutilised Computing Powers
+      <div id="hero_describe" class=" z-10 mt-2 min-h-[94px] self-end max-w-lg flex py-2 items-center">
+        <span class="border-white border-r-2 h-20"></span>
+        <h6 class="text-white text-2xl font-semibold leading-8 pl-12">Harnessing Distributed and Underutilised Computing
+          Powers
           to form a Computing
           Infrastructure
           Layer
@@ -47,6 +45,5 @@
 </template>
 
 <script setup>
-import Navigation from "@/components/HeroCenter/Navigation/Navigation.vue";
 
 </script>

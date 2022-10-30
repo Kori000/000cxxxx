@@ -2,15 +2,15 @@
  * @Author: Kori
  * @Date: 2022-10-29 12:19:38
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-29 21:39:33
+ * @LastEditTime: 2022-10-30 21:27:10
  * @FilePath: /portalverse_offcial/src/components/BackGround/BackGround.vue
  * @Description: 
  * 
 -->
 <template>
-  <div class="max-w-[1440px] relative ml-auto mr-auto" :style="{ backgroundColor: bool ? bgColor1 : bgColor2 }">
+  <div class=" max-w-[1440px]  relative ml-auto mr-auto" :style="{ backgroundColor: bool ? bgColor1 : bgColor2 }">
     <!-- 球体 -->
-    <div class="absolute top-[197px] right-[171px] z-10">
+    <div class="absolute top-[197px] right-[171px] z-[1]">
       <img src="@/assets/main-sphere.png">
       <img class="absolute -top-[33px] -left-[52px]" src="@/assets/small-spheres.png">
       <img class="absolute -top-[144px] left-[325px]" src="@/assets/small-spheres.png">
@@ -19,37 +19,37 @@
     </div>
     <!-- 椭圆渐变块 -->
     <!-- .gradient-sllipse---自定义tailwind -->
-    <div class="absolute top-[7336px] left-[380px] 
+    <div class=" absolute top-[7336px] left-[380px] 
       w-[751px] h-[789px] 
       gradient-ellipse 
        blur-[400px]">
     </div>
-    <div class="absolute top-[89px] -right-[18.5px] 
+    <div class=" absolute top-[89px] -right-[18.5px] 
       w-[613px] h-[613px] 
       gradient-ellipse 
       blur-[250px]">
     </div>
-    <div class="absolute top-[4426px] -right-[120px] 
+    <div class=" absolute top-[4426px] -right-[120px] 
       w-[366px] h-[385px] 
       gradient-ellipse 
       blur-[125px]">
     </div>
-    <div class="absolute top-[4975px] -left-[192px] 
+    <div class=" absolute top-[4975px] -left-[192px] 
     w-[366px] h-[385px]
     gradient-ellipse 
       blur-[125px] ">
     </div>
-    <div class="absolute top-[5543px] -right-[277px] 
+    <div class=" absolute top-[5543px] -right-[277px] 
     w-[366px] h-[385px]
     gradient-ellipse 
       blur-[125px] ">
     </div>
-    <div class="absolute top-[3082px] -left-[242px] 
+    <div class=" absolute top-[3082px] -left-[242px] 
     w-[366px] h-[385px]
     gradient-ellipse 
       blur-[125px] ">
     </div>
-    <div class="absolute top-[2204px] -right-[211px] 
+    <div class=" absolute top-[2204px] -right-[211px] 
     w-[366px] h-[385px]
     gradient-ellipse 
       blur-[125px] ">

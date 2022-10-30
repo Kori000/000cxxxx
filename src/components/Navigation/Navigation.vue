@@ -2,13 +2,13 @@
  * @Author: Kori
  * @Date: 2022-10-28 16:57:35
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-30 03:12:36
+ * @LastEditTime: 2022-10-30 16:39:18
  * @FilePath: /portalverse_offcial/src/components/HeroCenter/Navigation/Navigation.vue
  * @Description: 
  * 
 -->
 <template>
-  <div class="flex justify-between ring-white backdrop-blur-[10px] ">
+  <div class="flex justify-between ring-white backdrop-blur-[10px] fixed z-20">
     <div id="Logo" class="bg-logo-container w-[397px] h-[103px] bg-no-repeat flex justify-center items-center ">
       <div class="flex justify-center items-center mr-10">
         <img class="mr-4" src="@/assets/nav-logo.png">

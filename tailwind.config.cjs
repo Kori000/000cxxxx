@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-28 17:15:36
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-30 02:47:05
+ * @LastEditTime: 2022-10-30 17:10:25
  * @FilePath: /portalverse_offcial/tailwind.config.cjs
  * @Description: 
  * 
@@ -14,7 +14,14 @@ module.exports = {
     backgroundSize: {
       '200%': '200%',
     },
+
+    // screens: {
+    //   'xl': '1440px'
+    // },
     extend: {
+      maxWidth: {
+        "1440": "90rem"
+      },
       height: {
         "9641.24px": "9641.24px"
       },
@@ -35,7 +42,7 @@ module.exports = {
         "Inter-700": ["Inter-700", "sans-serif"]
       },
       animation: {
-        "linear-color": "linearColor 5s linear infinite",
+        "linear-color-animat": "linearColor 5s linear infinite",
       },
       keyframes: {
         linearColor: {

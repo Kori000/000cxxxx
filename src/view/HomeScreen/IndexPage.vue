@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-28 18:40:42
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-30 03:43:28
+ * @LastEditTime: 2022-10-30 22:14:22
  * @FilePath: /portalverse_offcial/src/view/HomeScreen/IndexPage.vue
  * @Description: 
  * 
@@ -12,33 +12,37 @@
   <div class=" bg-black-0c overflow-hidden ">
     <!-- 背景组件 -->
     <div>
-      <BackGround></BackGround>
+      <BackGround class="relative "></BackGround>
     </div>
+    <!-- 导航栏 -->
+    <Navigation class=" w-screen h-[104px] "></Navigation>
+
     <!-- 内容 -->
-    <div class="w-full h-full flex flex-col items-center">
-      <HeroCenter class=" mb-[120px] h-[982px]"></HeroCenter>
-      <MissionSection class="w-screen h-[1041px]  border-2  border-pink-500
+    <!-- <div class=" container mx-auto flex flex-col items-center"> -->
+    <div class="container mx-auto ">
+      <HeroCenter class="max-w-1440 my-0 mx-auto"></HeroCenter>
+      <MissionSection class="max-w-1440 my-0 mx-auto h-[1041px]  border-2  border-pink-500
           mb-[120px]
         "></MissionSection>
-      <PlayerBenefits class="w-screen h-[830.5px] border-2  border-pink-500 
+      <PlayerBenefits class="max-w-1440 my-0 mx-auto h-[830.5px] border-2  border-pink-500 
           mb-[120px]
         "></PlayerBenefits>
-      <TimelineSection class="w-screen h-[1224px] border-2  border-pink-500 
+      <TimelineSection class="max-w-1440 my-0 mx-auto h-[1224px] border-2  border-pink-500 
           mb-[120px]
         "></TimelineSection>
-      <InvestorSection class="w-screen h-[1333.5px] border-2  border-pink-500 
+      <InvestorSection class="max-w-1440 my-0 mx-auto h-[1333.5px] border-2  border-pink-500 
           mb-[120px]
         "></InvestorSection>
-      <PostsSecton class="w-screen h-[1132px] border-2  border-pink-500 
+      <PostsSecton class="max-w-1440 my-0 mx-auto h-[1132px] border-2  border-pink-500 
           mb-[120px]
         "></PostsSecton>
-      <Game class="w-screen h-[1318px] border-2  border-pink-500 
+      <Game class="max-w-1440 my-0 mx-auto h-[1318px] border-2  border-pink-500 
           mb-[120px]
         "></Game>
-      <NewsletterSection class="w-screen h-[583px] border-2  border-pink-500
+      <NewsletterSection class="max-w-1440 my-0 mx-auto h-[583px] border-2  border-pink-500
           mb-[120px]
         "></NewsletterSection>
-      <Footer class="w-screen h-[237.24px] border-2  border-pink-500
+      <Footer class="max-w-1440 my-0 mx-auto h-[237.24px] border-2  border-pink-500
           mb-[120px]
         "></Footer>
     </div>
@@ -52,6 +56,7 @@ import BackGround from "@/components/BackGround/BackGround.vue";
 /**
  * 根据页面结构从上到下
  */
+import Navigation from "@/components/Navigation/Navigation.vue";
 import HeroCenter from "@/components/HeroCenter/HeroCenter.vue";
 import MissionSection from "@/components/MissionSection/MissionSection.vue";
 import PlayerBenefits from "@/components/PlayerBenefits/PlayerBenefits.vue";
