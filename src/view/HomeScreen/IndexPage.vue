@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-28 18:40:42
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-30 22:14:22
+ * @LastEditTime: 2022-10-31 00:27:36
  * @FilePath: /portalverse_offcial/src/view/HomeScreen/IndexPage.vue
  * @Description: 
  * 
@@ -19,30 +19,28 @@
 
     <!-- 内容 -->
     <!-- <div class=" container mx-auto flex flex-col items-center"> -->
-    <div class="container mx-auto ">
-      <HeroCenter class="max-w-1440 my-0 mx-auto"></HeroCenter>
-      <MissionSection class="max-w-1440 my-0 mx-auto h-[1041px]  border-2  border-pink-500
-          mb-[120px]
-        "></MissionSection>
-      <PlayerBenefits class="max-w-1440 my-0 mx-auto h-[830.5px] border-2  border-pink-500 
+    <div class="container max-w-1440 mx-auto ">
+      <HeroCenter class=""></HeroCenter>
+      <MissionSection class=""></MissionSection>
+      <PlayerBenefits class=" h-[830.5px] border-2  border-orange-400 
           mb-[120px]
         "></PlayerBenefits>
-      <TimelineSection class="max-w-1440 my-0 mx-auto h-[1224px] border-2  border-pink-500 
+      <TimelineSection class=" h-[1224px] border-2  border-pink-500 
           mb-[120px]
         "></TimelineSection>
-      <InvestorSection class="max-w-1440 my-0 mx-auto h-[1333.5px] border-2  border-pink-500 
+      <InvestorSection class=" h-[1333.5px] border-2  border-pink-500 
           mb-[120px]
         "></InvestorSection>
-      <PostsSecton class="max-w-1440 my-0 mx-auto h-[1132px] border-2  border-pink-500 
+      <PostsSecton class=" h-[1132px] border-2  border-pink-500 
           mb-[120px]
         "></PostsSecton>
-      <Game class="max-w-1440 my-0 mx-auto h-[1318px] border-2  border-pink-500 
+      <Game class=" h-[1318px] border-2  border-pink-500 
           mb-[120px]
         "></Game>
-      <NewsletterSection class="max-w-1440 my-0 mx-auto h-[583px] border-2  border-pink-500
+      <NewsletterSection class=" h-[583px] border-2  border-pink-500
           mb-[120px]
         "></NewsletterSection>
-      <Footer class="max-w-1440 my-0 mx-auto h-[237.24px] border-2  border-pink-500
+      <Footer class=" h-[237.24px] border-2  border-pink-500
           mb-[120px]
         "></Footer>
     </div>

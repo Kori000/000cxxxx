@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-28 17:15:36
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-30 17:10:25
+ * @LastEditTime: 2022-10-31 00:29:11
  * @FilePath: /portalverse_offcial/tailwind.config.cjs
  * @Description: 
  * 

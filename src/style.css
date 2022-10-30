@@ -34,7 +34,7 @@
     @apply bg-gradient-to-r from-[#75DAF3] via-[#4553F2] to-[#7623F5] filter
   }
 
-  /* 字体流动色 */
+  /* 标题流动色 */
   .linear-color {
     @apply text-transparent bg-gradient-to-r from-[#BBBBFF] via-[#ffffff] to-[#BBBBFF] bg-200% bg-clip-text
   }
@@ -48,3 +48,10 @@
 }
 
 @tailwind utilities;
+
+/* 边框垂直渐变 */
+.border-gradient {
+  border: 1px solid;
+  border-radius: 23px;
+  border-image: linear-gradient(to bottom, #fff, transparent 84%) 1;
+}
