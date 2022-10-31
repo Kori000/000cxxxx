@@ -60,7 +60,8 @@ module.exports = {
       backgroundImage: {
         'Rectangle': "url('src/assets/Rectangle.png')",
         'Rectangle-hover': "url('src/assets/Rectangle-hover.png')",
-        'Union': "url('src/assets/Union.png')"
+        'Union': "url('src/assets/Union.png')",
+        'Blog-btn-border': "url('src/assets/blog-btn-border.png')"
       }
     }
   },

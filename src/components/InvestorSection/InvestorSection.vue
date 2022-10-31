@@ -2,13 +2,13 @@
  * @Author: Kori
  * @Date: 2022-10-29 21:59:16
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-31 17:16:28
+ * @LastEditTime: 2022-11-01 00:35:33
  * @FilePath: /portalverse_offcial/src/components/InvestorSection/InvestorSection.vue
  * @Description: 
  * 
 -->
 <template>
-  <div>
+  <div class="mb-32">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col min-h-screen">
       <div class="w-[940px]  flex flex-col justify-between">
         <div id="title" class="mb-[110px]">

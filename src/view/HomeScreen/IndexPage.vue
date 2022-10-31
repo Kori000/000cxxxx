@@ -25,9 +25,7 @@
       <PlayerBenefits class=""></PlayerBenefits>
       <TimelineSection class=""></TimelineSection>
       <InvestorSection class=""></InvestorSection>
-      <PostsSecton class=" h-[1132px] border-2  border-pink-500 
-          mb-[120px]
-        "></PostsSecton>
+      <PostsSecton></PostsSecton>
       <Game class=" h-[1318px] border-2  border-pink-500 
           mb-[120px]
         "></Game>
