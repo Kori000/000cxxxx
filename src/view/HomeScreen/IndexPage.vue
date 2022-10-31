@@ -2,14 +2,14 @@
  * @Author: Kori
  * @Date: 2022-10-28 18:40:42
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-31 00:27:36
+ * @LastEditTime: 2022-10-31 17:17:04
  * @FilePath: /portalverse_offcial/src/view/HomeScreen/IndexPage.vue
  * @Description: 
  * 
 -->
 <template>
   <!-- 全局背景颜色--#0c0c0c -->
-  <div class=" bg-black-0c overflow-hidden ">
+  <div class=" bg-black overflow-hidden ">
     <!-- 背景组件 -->
     <div>
       <BackGround class="relative "></BackGround>
@@ -22,15 +22,9 @@
     <div class="container max-w-1440 mx-auto ">
       <HeroCenter class=""></HeroCenter>
       <MissionSection class=""></MissionSection>
-      <PlayerBenefits class=" h-[830.5px] border-2  border-orange-400 
-          mb-[120px]
-        "></PlayerBenefits>
-      <TimelineSection class=" h-[1224px] border-2  border-pink-500 
-          mb-[120px]
-        "></TimelineSection>
-      <InvestorSection class=" h-[1333.5px] border-2  border-pink-500 
-          mb-[120px]
-        "></InvestorSection>
+      <PlayerBenefits class=""></PlayerBenefits>
+      <TimelineSection class=""></TimelineSection>
+      <InvestorSection class=""></InvestorSection>
       <PostsSecton class=" h-[1132px] border-2  border-pink-500 
           mb-[120px]
         "></PostsSecton>

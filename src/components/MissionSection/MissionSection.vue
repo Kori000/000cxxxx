@@ -2,16 +2,16 @@
  * @Author: Kori
  * @Date: 2022-10-29 21:56:43
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-31 01:54:43
+ * @LastEditTime: 2022-10-31 16:57:05
  * @FilePath: /portalverse_offcial/src/components/MissionSection/MissionSection.vue
  * @Description: 
  * 
 -->
 <template>
-  <div>
-    <div class="lg:mx-36 mx-12 flex justify-center items-start flex-col  min-h-screen">
+  <div class="mb-32">
+    <div class="lg:mx-36 mx-12 flex justify-center items-start flex-col  min-h-screen py-24">
       <div id="border-line"
-        class="relative border-b-0 border h-[841px] w-full rounded-3xl border-gradient flex justify-center items-end ">
+        class="relative border-b-0 border h-[841px] w-full rounded-3xl custom-border-gradient px-[30px] flex justify-center items-end ">
         <div id="text-container" class="w-full h-[726px] max-w-[1060px] flex flex-col justify-between items-center">
           <div id="top-content"
             class=" max-w-[1026px] w-full flex justify-between flex-col items-center xl:items-end xl:flex-row ">

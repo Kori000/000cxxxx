@@ -39,9 +39,19 @@
     @apply text-transparent bg-gradient-to-r from-[#BBBBFF] via-[#ffffff] to-[#BBBBFF] bg-200% bg-clip-text
   }
 
+  /* TimeLine-cart背景色 */
+  .timeline-blur {
+    @apply bg-gradient-to-r from-[#75DAF3] via-[#4553F2] to-[#7623F5] filter
+  }
+
   /* NavigationBar通用样式 */
   .nav-link {
     @apply text-white font-medium text-xl font-Inter-500
+  }
+
+  /* 按钮渐变通用样式 */
+  .btn-gradient {
+    @apply bg-gradient-to-r from-[#75DAF3] via-[#4553F2] to-[#7623F5]
   }
 
 
@@ -50,7 +60,7 @@
 @tailwind utilities;
 
 /* 边框垂直渐变 */
-.border-gradient {
+.custom-border-gradient {
   border: 1px solid;
   border-radius: 23px;
   border-image: linear-gradient(to bottom, #fff, transparent 84%) 1;

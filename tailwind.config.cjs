@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-28 17:15:36
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-31 00:29:11
+ * @LastEditTime: 2022-10-31 14:02:16
  * @FilePath: /portalverse_offcial/tailwind.config.cjs
  * @Description: 
  * 
@@ -56,6 +56,11 @@ module.exports = {
             backgroundPosition: "0"
           }
         }
+      },
+      backgroundImage: {
+        'Rectangle': "url('src/assets/Rectangle.png')",
+        'Rectangle-hover': "url('src/assets/Rectangle-hover.png')",
+        'Union': "url('src/assets/Union.png')"
       }
     }
   },

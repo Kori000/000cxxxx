@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-29 21:54:44
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-30 22:48:20
+ * @LastEditTime: 2022-10-31 14:54:45
  * @FilePath: /portalverse_offcial/src/components/HeroCenter/HeroCenter.vue
  * @Description: 
  * 
@@ -19,7 +19,7 @@
           Decentralized Real-Time Cloud Gaming</h1>
         <div id="btn_com" class=" flex mt-12 font-bold text-lg">
           <button class="w-72 h-16 rounded-[20px] mr-2
-          bg-gradient-to-r from-[#75DAF3] via-[#4553F2] to-[#7623F5] 
+          btn-gradient
            ">Join Discord</button>
           <button class="flex justify-evenly items-center w-60 h-14">
             <p>Read Whitepaper</p>
