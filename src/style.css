@@ -55,6 +55,8 @@
   }
 
 
+
+
 }
 
 @tailwind utilities;
@@ -64,4 +66,9 @@
   border: 1px solid;
   border-radius: 23px;
   border-image: linear-gradient(to bottom, #fff, transparent 84%) 1;
+}
+
+/* Email背景 */
+.custom-email-gradient {
+  background: linear-gradient(110.03deg, #75DAF3 11.94%, #4553F2 51.8%, #7623F5 75.1%);
 }

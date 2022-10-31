@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-28 18:40:42
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-31 17:17:04
+ * @LastEditTime: 2022-11-01 03:33:08
  * @FilePath: /portalverse_offcial/src/view/HomeScreen/IndexPage.vue
  * @Description: 
  * 
@@ -26,17 +26,13 @@
       <TimelineSection class=""></TimelineSection>
       <InvestorSection class=""></InvestorSection>
       <PostsSecton></PostsSecton>
-      <Game class=" h-[1318px] border-2  border-pink-500 
-          mb-[120px]
-        "></Game>
-      <NewsletterSection class=" h-[583px] border-2  border-pink-500
-          mb-[120px]
-        "></NewsletterSection>
-      <Footer class=" h-[237.24px] border-2  border-pink-500
-          mb-[120px]
-        "></Footer>
+      <Game class=""></Game>
+      <CutLine></CutLine>
+      <NewsletterSection class=""></NewsletterSection>
     </div>
 
+    <!-- 页脚 -->
+    <Footer class=" w-screen "></Footer>
   </div>
 </template>
 
@@ -54,6 +50,7 @@ import TimelineSection from "@/components/TimelineSection/TimelineSection.vue";
 import InvestorSection from "@/components/InvestorSection/InvestorSection.vue";
 import PostsSecton from "@/components/PostsSecton/PostsSecton.vue";
 import Game from "@/components/Game/Game.vue";
+import CutLine from "@/components/CutLine.vue";
 import NewsletterSection from "@/components/NewsletterSection/NewsletterSection.vue";
 import Footer from "@/components/Footer/Footer.vue";
 

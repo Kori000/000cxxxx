@@ -2,13 +2,13 @@
  * @Author: Kori
  * @Date: 2022-10-29 22:00:00
  * @LastEditors: Kori
- * @LastEditTime: 2022-11-01 00:38:02
+ * @LastEditTime: 2022-11-01 02:16:17
  * @FilePath: /portalverse_offcial/src/components/PostsSecton/PostsSecton.vue
  * @Description: 
  * 
 -->
 <template>
-  <div class="mb-32">
+  <div class="mb-80">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col min-h-screen  ">
       <div class="w-[1148px] h-screen flex flex-col justify-between">
         <div id="title" class="flex flex-col justify-between items-center">
@@ -59,6 +59,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script setup>
