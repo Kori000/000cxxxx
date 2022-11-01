@@ -33,7 +33,11 @@ module.exports = {
         "linear-light-end": "#75DAF3",
       },
       backgroundImage: {
-        'logo-container': "url('@/assets/nav-logo-container.png')",
+        'logo-container': "url('src/assets/nav-logo-container.png')",
+        'Rectangle': "url('src/assets/Rectangle.png')",
+        'Rectangle-hover': "url('src/assets/Rectangle-hover.png')",
+        'Union': "url('src/assets/Union.png')",
+        'Blog-btn-border': "url('src/assets/blog-btn-border.png')"
       },
       fontFamily: {
         "Inter": ["Inter", "sans-serif"],
@@ -57,12 +61,7 @@ module.exports = {
           }
         }
       },
-      backgroundImage: {
-        'Rectangle': "url('src/assets/Rectangle.png')",
-        'Rectangle-hover': "url('src/assets/Rectangle-hover.png')",
-        'Union': "url('src/assets/Union.png')",
-        'Blog-btn-border': "url('src/assets/blog-btn-border.png')"
-      }
+
     }
   },
   plugins: [

@@ -11,7 +11,8 @@
   <div class=" max-w-[1440px]  relative ml-auto mr-auto">
     <!-- 球体 -->
     <div class="absolute top-[197px] right-[171px] z-[1]">
-      <img src="@/assets/main-sphere.png" class="reval-ini">
+      <!-- 大球 -->
+      <img src="@/assets/main-sphere.png" class="reval-ini max-w-[45vw]">
       <img class="absolute -top-[33px] -left-[52px]" src="@/assets/small-spheres.png">
       <img class="absolute -top-[144px] left-[325px]" src="@/assets/small-spheres.png">
       <img class="absolute top-[46px] -right-[128px]" src="@/assets/small-spheres.png">

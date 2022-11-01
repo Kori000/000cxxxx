@@ -20,7 +20,7 @@
         <!-- 要删除高度 -->
         <div id="Game-List" class="w-full h-[952px] flex flex-col justify-between items-center">
           <div id="Game-cart" class=" w-full h-[443px] relative flex justify-center items-center"
-            v-for="i, index in homeState.homeInfo.games" :key="index">
+            v-for="i, index in homeInfo.games" :key="index">
             <img src="../../assets/game-cart-hover.png" class=" w-full h-full absolute top-0 left-0 ">
             <div class="z-30  w-full h-full absolute top-0 left-0" @mouseleave="mouseLeave(index)"
               @mouseover="mouseOver(index)"></div>
@@ -49,29 +49,8 @@
 </template>
 
 <script setup>
-import { reactive, computed } from 'vue';
-// const props = defineProps(['homeInfo'])
+defineProps(['homeInfo'])
 
-import { HomeStore } from '@/store/index';
-
-let homeState = computed(() => HomeStore())
-
-
-// const gameList = reactive([
-//   {
-//     name: 'Abyssworld',
-//     cover_image: 'src/assets/game-1.png',
-//     introduction: 'Abyssworld is primed to be the first Cloud and Chain Native AAA-level MMO.',
-//     tag: 'Planned 2023 Release',
-//     borderShow: true
-//   },
-//   {
-//     name: 'OUTSET',
-//     cover_image: 'src/assets/game-2.png',
-//     introduction: 'Abyssworld is primed to be the first Cloud and Chain Native AAA-level MMO.',
-//     borderShow: true
-//   }
-// ])
 function mouseOver (index) {
   // gameList[index].borderShow = false
 }

@@ -19,8 +19,8 @@
             updated on Portalverse</h3>
         </div>
         <div id="main" class="w-[1148px] h-[700px] flex flex-col justify-between items-center  ">
-          <div id="blog-main-content" class="w-full h-[496px]  flex justify-between items-start " v-if="homeState">
-            <div class="w-[554px]  flex flex-col justify-between z-10" v-for="i in homeState.homeInfo.blogs">
+          <div id="blog-main-content" class="w-full h-[496px]  flex justify-between items-start ">
+            <div class="w-[554px]  flex flex-col justify-between z-10" v-for="i in homeInfo.blogs">
               <div class="w-[554px] h-[298px] relative ">
                 <img :src="i.cover_image
                 " class="">
@@ -65,19 +65,7 @@
 
 
 <script setup>
-import { computed } from 'vue';
-import { HomeStore } from '@/store/index';
-let homeState = computed(() => HomeStore())
+defineProps(['homeInfo'])
 
-    // const blogInfo = reactive([
-    //   {
-    //     cover_image: 'src/assets/blog-left.png',
-    //     title: 'New Partnership Announcement: PortalVerse and Octopus Network'
-    //   },
-    //   {
-    //     cover_image: 'src/assets/blog-right.png',
-    //     title: 'Decentralized Cloud Gaming Platform Portalverse Network Closes Multi-Million Dollar Seed Funding Round'
-    //   }
-    // ])
 </script>
 

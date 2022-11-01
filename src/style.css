@@ -64,3 +64,8 @@
   border-image: linear-gradient(to bottom, #8f41e9, transparent 84%) 1;
   clip-path: inset(0px 0px 0px 0px round 23px);
 }
+
+/* 背景图片自适应 */
+.custom-image-self {
+  background-size: 100% 100%;
+}

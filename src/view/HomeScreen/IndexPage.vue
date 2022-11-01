@@ -20,13 +20,16 @@
     <!-- 内容 -->
     <!-- <div class=" container mx-auto flex flex-col items-center"> -->
     <div class="container max-w-1440 mx-auto ">
+      <div class="rounded-md bg-cyan-500 w-[300px] h-[200px]">
+        <a href="#Blog" class="block w-full h-full">调走</a>
+      </div>
       <HeroCenter class=""></HeroCenter>
-      <MissionSection class=""></MissionSection>
-      <PlayerBenefits class=""></PlayerBenefits>
-      <TimelineSection class=""></TimelineSection>
-      <InvestorSection :homeInfo="homeInfo"></InvestorSection>
-      <PostsSecton :homeInfo="homeInfo"></PostsSecton>
-      <Game :homeInfo="homeInfo" class=""></Game>
+      <MissionSection id="Vision"></MissionSection>
+      <PlayerBenefits id="Features" class=""></PlayerBenefits>
+      <TimelineSection id="Milestones" class=""></TimelineSection>
+      <InvestorSection id="Milestones" :homeInfo="homeInfo"></InvestorSection>
+      <PostsSecton id="Blog" :homeInfo="homeInfo"></PostsSecton>
+      <Game id="Game" :homeInfo="homeInfo" class=""></Game>
       <CutLine></CutLine>
       <NewsletterSection class=""></NewsletterSection>
     </div>
@@ -58,15 +61,14 @@ import Footer from "@/components/Footer/Footer.vue";
 // 获取页面信息API
 import { getHomeInfoAPI } from '@/api/home.js';
 import { reactive, ref } from "vue";
-import { HomeStore } from '@/store/index';
-const homeState = HomeStore()
 
+const homeInfo = ref({})
 // 发起请求
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
-  homeState.updateHomeInfo(res.data)
+  // mock 不用.data 对接需要修改此处
+  homeInfo.value = res
 }
 getHomeInfo()
-
 </script>
 

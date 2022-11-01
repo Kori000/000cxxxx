@@ -2,11 +2,11 @@
   <div class="mb-32 ">
     <div class=" lg:mx-36 mx-12 flex justify-center items-start flex-col  min-h-screen ">
       <!-- 主体内容 -->
-      <div id="hero_main " class="reval-in w-full text-white  z-10 pt-52  max-w-2xl ">
+      <div id="hero_main " class="reval-in w-full text-white  z-10 pt-52  max-w-2xl mr-12">
         <h5 class=" text-xl font-medium leading-6">Portalverse Network</h5>
         <!-- 大标题+动画 -->
         <h1
-          class=" text-8xl font-bold leading-[130px] tracking-wide text-left linear-color animate-linear-color-animat">
+          class=" text-8xl  font-bold leading-[130px] tracking-wide lg:text-left text-center linear-color animate-linear-color-animat ">
           Decentralized Real-Time Cloud Gaming</h1>
         <div id="btn_com" class=" flex mt-12 font-bold text-lg">
           <button class="w-72 h-16 rounded-[20px] mr-2

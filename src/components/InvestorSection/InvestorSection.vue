@@ -10,8 +10,7 @@
         <div id="sponsor" class="w-[940] h-[1133px]  flex flex-col justify-between items-center">
           <!-- 上方Investors -->
           <div id="Investors" class="w-full h-[230px] mb-14 flex justify-between">
-            <div class="w-[145px] h-full flex flex-col justify-between items-center"
-              v-for="i in homeState.homeInfo.investors">
+            <div class="w-[145px] h-full flex flex-col justify-between items-center" v-for="i in homeInfo.investors">
               <!-- icon -->
               <div class="w-[121px] h-[121px] bg-Union relative ">
                 <img :src="i.logo_image
@@ -29,8 +28,7 @@
 
           <!-- 下方Partners -->
           <div id="Partners" class="w-[871px]  flex justify-between flex-wrap mb-28">
-            <div class="w-[289px] h-[204.66666667px] flex justify-center items-center"
-              v-for="i in homeState.homeInfo.partners">
+            <div class="w-[289px] h-[204.66666667px] flex justify-center items-center" v-for="i in homeInfo.partners">
               <img :src="i.logo_image
               " class="max-w-full">
             </div>
@@ -42,62 +40,7 @@
 </template>
 
 <script setup>
-import {  computed } from 'vue';
-// const props = defineProps(['homeInfo'])
+defineProps(['homeInfo'])
 
-import { HomeStore } from '@/store/index';
 
-let homeState = computed(() =>HomeStore())
-
-const investors = homeState.investors
-const partners = homeState.partners
-// const investors = props.homeInfo.value
-// const investors = reactive([
-//   {
-//     logo_image: 'src/assets/sponsor-logo-1.png',
-//     title_image: 'src/assets/sponsor-text-1.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-logo-2.png',
-//     title_image: 'src/assets/sponsor-text-2.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-logo-3.png',
-//     title_image: 'src/assets/sponsor-text-3.png'
-//   },
-//   {
-//     logo_image: '',
-//     title_image: ''
-//   }
-// ])
-// const partners = reactive([
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-//   {
-//     logo_image: 'src/assets/sponsor-partners-logo.png'
-//   },
-
-// ])
 </script>
