@@ -4,22 +4,7 @@
 @layer base {
   @font-face {
     font-family: "Inter";
-    src: url(./assets/font/Inte.woff2);
-  }
-
-  @font-face {
-    font-family: "Inter-400";
-    src: url(./assets/font/Inter-400.woff2);
-  }
-
-  @font-face {
-    font-family: "Inter-500";
-    src: url(./assets/font/Inter-500.woff2);
-  }
-
-  @font-face {
-    font-family: "Inter-700";
-    src: url(./assets/font/Inter-700.woff2);
+    src: url(./assets/font/Inter.woff);
   }
 }
 
@@ -71,4 +56,11 @@
 /* Email背景 */
 .custom-email-gradient {
   background: linear-gradient(110.03deg, #75DAF3 11.94%, #4553F2 51.8%, #7623F5 75.1%);
+}
+
+/*  */
+.custom-border-gradient1 {
+  border: 10px solid;
+  border-image: linear-gradient(to bottom, #8f41e9, transparent 84%) 1;
+  clip-path: inset(0px 0px 0px 0px round 23px);
 }

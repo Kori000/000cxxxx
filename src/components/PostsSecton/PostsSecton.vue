@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-29 22:00:00
  * @LastEditors: Kori
- * @LastEditTime: 2022-11-01 02:16:17
+ * @LastEditTime: 2022-11-01 15:55:48
  * @FilePath: /portalverse_offcial/src/components/PostsSecton/PostsSecton.vue
  * @Description: 
  * 
@@ -19,13 +19,15 @@
             updated on Portalverse</h3>
         </div>
         <div id="main" class="w-[1148px] h-[700px] flex flex-col justify-between items-center  ">
-          <div id="blog-main-content" class="w-full h-[496px]  flex justify-between items-start">
-            <div class="w-[554px]  flex flex-col justify-between z-10" v-for="i in blogInfo">
+          <div id="blog-main-content" class="w-full h-[496px]  flex justify-between items-start " v-if="homeState">
+            <div class="w-[554px]  flex flex-col justify-between z-10" v-for="i in homeState.homeInfo.blogs">
               <div class="w-[554px] h-[298px] relative ">
-                <img :src="i.img" class="">
+                <img :src="i.cover_image
+                " class="">
                 <img src="../../assets/blog-line.png" class="absolute -bottom-[2px] left-0">
               </div>
-              <p class="text-4xl font-medium leading-10 text-white break-words max-w-[510px] mt-9 ml-[19px]">{{ i.text
+              <p class="text-4xl font-medium leading-10 text-white break-words max-w-[510px] mt-9 ml-[19px]">{{ i.title
+              
               }}</p>
             </div>
           </div>
@@ -53,8 +55,6 @@
               Articles
             </h3>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -62,20 +62,22 @@
 
 </template>
 
+
+
 <script setup>
-import { reactive } from 'vue';
-const blogInfo = reactive([
-  {
-    img: 'src/assets/blog-left.png',
-    text: 'New Partnership Announcement: PortalVerse and Octopus Network'
-  },
-  {
-    img: 'src/assets/blog-right.png',
-    text: 'Decentralized Cloud Gaming Platform Portalverse Network Closes Multi-Million Dollar Seed Funding Round'
-  }
-])
+import { computed } from 'vue';
+import { HomeStore } from '@/store/index';
+let homeState = computed(() => HomeStore())
+
+    // const blogInfo = reactive([
+    //   {
+    //     cover_image: 'src/assets/blog-left.png',
+    //     title: 'New Partnership Announcement: PortalVerse and Octopus Network'
+    //   },
+    //   {
+    //     cover_image: 'src/assets/blog-right.png',
+    //     title: 'Decentralized Cloud Gaming Platform Portalverse Network Closes Multi-Million Dollar Seed Funding Round'
+    //   }
+    // ])
 </script>
 
-<style lang="scss" scoped>
-
-</style>

@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-28 18:40:42
  * @LastEditors: Kori
- * @LastEditTime: 2022-11-01 03:33:08
+ * @LastEditTime: 2022-11-01 16:50:06
  * @FilePath: /portalverse_offcial/src/view/HomeScreen/IndexPage.vue
  * @Description: 
  * 
@@ -24,9 +24,9 @@
       <MissionSection class=""></MissionSection>
       <PlayerBenefits class=""></PlayerBenefits>
       <TimelineSection class=""></TimelineSection>
-      <InvestorSection class=""></InvestorSection>
-      <PostsSecton></PostsSecton>
-      <Game class=""></Game>
+      <InvestorSection :homeInfo="homeInfo"></InvestorSection>
+      <PostsSecton :homeInfo="homeInfo"></PostsSecton>
+      <Game :homeInfo="homeInfo" class=""></Game>
       <CutLine></CutLine>
       <NewsletterSection class=""></NewsletterSection>
     </div>
@@ -37,6 +37,7 @@
 </template>
 
 <script setup>
+
 // 背景
 import BackGround from "@/components/BackGround/BackGround.vue";
 /**
@@ -54,8 +55,18 @@ import CutLine from "@/components/CutLine.vue";
 import NewsletterSection from "@/components/NewsletterSection/NewsletterSection.vue";
 import Footer from "@/components/Footer/Footer.vue";
 
+// 获取页面信息API
+import { getHomeInfoAPI } from '@/api/home.js';
+import { reactive, ref } from "vue";
+import { HomeStore } from '@/store/index';
+const homeState = HomeStore()
+
+// 发起请求
+async function getHomeInfo () {
+  const { data: res } = await getHomeInfoAPI()
+  homeState.updateHomeInfo(res.data)
+}
+getHomeInfo()
+
 </script>
 
-<style  scoped>
-
-</style>

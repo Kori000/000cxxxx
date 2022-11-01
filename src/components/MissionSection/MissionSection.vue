@@ -1,12 +1,3 @@
-<!--
- * @Author: Kori
- * @Date: 2022-10-29 21:56:43
- * @LastEditors: Kori
- * @LastEditTime: 2022-10-31 16:57:05
- * @FilePath: /portalverse_offcial/src/components/MissionSection/MissionSection.vue
- * @Description: 
- * 
--->
 <template>
   <div class="mb-32">
     <div class="lg:mx-36 mx-12 flex justify-center items-start flex-col  min-h-screen py-24">
@@ -16,7 +7,7 @@
           <div id="top-content"
             class=" max-w-[1026px] w-full flex justify-between flex-col items-center xl:items-end xl:flex-row ">
             <div id="top-content-left" class=" w-full max-w-[619px] h-full flex flex-col ">
-              <h5 class="text-white font-medium text-xl min-w[558px]">Our Vision</h5>
+              <h5 class="reval-rightmove text-white font-medium text-xl min-w[558px] ">Our Vision</h5>
               <h3
                 class="linear-color animate-linear-color-animat font-semibold text-6xl text-start min-w-[470px] leading-[66px] mt-10">
                 Community Driven
@@ -72,6 +63,32 @@
 
 <script setup>
 import { ref, reactive } from 'vue';
+import { onMounted } from 'vue';
+import scrollReveal from 'scrollreveal';
+const scrollRev = scrollReveal()
+onMounted(() => {
+  scrollRev.reveal({
+    // 动画的时长
+    // duration: 1500,
+    // 延迟时间
+    // delay: 800,
+    // 动画开始的位置，'bottom', 'left', 'top', 'right'
+    // origin: 'top',
+    // 回滚的时候是否再次触发动画
+    reset: false,
+    // 在移动端是否使用动画
+    mobile: false,
+    // 滚动的距离，单位可以用%，rem等
+    // distance: '200px',
+    // 其他可用的动画效果
+    opacity: 0.001,
+    easing: 'linear',
+    scale: 1,
+  })
+})
+
+
+
 const cart = reactive([
   {
     title: 'Players',
@@ -89,6 +106,4 @@ const cart = reactive([
     url: 'src/assets/Line-3.png'
   }
 ])
-console.log(cart[1])
-console.log()
 </script>

@@ -1,12 +1,3 @@
-<!--
- * @Author: Kori
- * @Date: 2022-10-29 21:59:16
- * @LastEditors: Kori
- * @LastEditTime: 2022-11-01 00:35:33
- * @FilePath: /portalverse_offcial/src/components/InvestorSection/InvestorSection.vue
- * @Description: 
- * 
--->
 <template>
   <div class="mb-32">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col min-h-screen">
@@ -19,14 +10,16 @@
         <div id="sponsor" class="w-[940] h-[1133px]  flex flex-col justify-between items-center">
           <!-- 上方Investors -->
           <div id="Investors" class="w-full h-[230px] mb-14 flex justify-between">
-            <div class="w-[145px] h-full flex flex-col justify-between items-center" v-for="i in investors">
+            <div class="w-[145px] h-full flex flex-col justify-between items-center"
+              v-for="i in homeState.homeInfo.investors">
               <!-- icon -->
               <div class="w-[121px] h-[121px] bg-Union relative ">
-                <img :src="i.icon" class="absolute -right-[3px] bottom-[3px]">
+                <img :src="i.logo_image
+                " class="absolute -right-[3px] bottom-[3px]">
               </div>
               <!-- text-img -->
               <div class="flex justify-center items-center w-full min-h-[83px]">
-                <img :src="i.textImg" class="w-[145px] ">
+                <img :src="i.title_image" class="w-[145px] ">
               </div>
             </div>
           </div>
@@ -36,8 +29,10 @@
 
           <!-- 下方Partners -->
           <div id="Partners" class="w-[871px]  flex justify-between flex-wrap mb-28">
-            <div class="w-[289px] h-[204.66666667px] flex justify-center items-center" v-for="i in partners">
-              <img :src="i.icon" class="max-w-full">
+            <div class="w-[289px] h-[204.66666667px] flex justify-center items-center"
+              v-for="i in homeState.homeInfo.partners">
+              <img :src="i.logo_image
+              " class="max-w-full">
             </div>
           </div>
         </div>
@@ -47,53 +42,62 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue';
-const investors = reactive([
-  {
-    icon: 'src/assets/sponsor-logo-1.png',
-    textImg: 'src/assets/sponsor-text-1.png'
-  },
-  {
-    icon: 'src/assets/sponsor-logo-2.png',
-    textImg: 'src/assets/sponsor-text-2.png'
-  },
-  {
-    icon: 'src/assets/sponsor-logo-3.png',
-    textImg: 'src/assets/sponsor-text-3.png'
-  },
-  {
-    icon: '',
-    textImg: ''
-  }
-])
-const partners = reactive([
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
-  {
-    icon: 'src/assets/sponsor-partners-logo.png'
-  },
+import {  computed } from 'vue';
+// const props = defineProps(['homeInfo'])
 
-])
+import { HomeStore } from '@/store/index';
+
+let homeState = computed(() =>HomeStore())
+
+const investors = homeState.investors
+const partners = homeState.partners
+// const investors = props.homeInfo.value
+// const investors = reactive([
+//   {
+//     logo_image: 'src/assets/sponsor-logo-1.png',
+//     title_image: 'src/assets/sponsor-text-1.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-logo-2.png',
+//     title_image: 'src/assets/sponsor-text-2.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-logo-3.png',
+//     title_image: 'src/assets/sponsor-text-3.png'
+//   },
+//   {
+//     logo_image: '',
+//     title_image: ''
+//   }
+// ])
+// const partners = reactive([
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+//   {
+//     logo_image: 'src/assets/sponsor-partners-logo.png'
+//   },
+
+// ])
 </script>

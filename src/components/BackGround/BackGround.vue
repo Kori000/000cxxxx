@@ -2,16 +2,16 @@
  * @Author: Kori
  * @Date: 2022-10-29 12:19:38
  * @LastEditors: Kori
- * @LastEditTime: 2022-10-30 21:27:10
+ * @LastEditTime: 2022-11-01 17:00:28
  * @FilePath: /portalverse_offcial/src/components/BackGround/BackGround.vue
  * @Description: 
  * 
 -->
 <template>
-  <div class=" max-w-[1440px]  relative ml-auto mr-auto" :style="{ backgroundColor: bool ? bgColor1 : bgColor2 }">
+  <div class=" max-w-[1440px]  relative ml-auto mr-auto">
     <!-- 球体 -->
     <div class="absolute top-[197px] right-[171px] z-[1]">
-      <img src="@/assets/main-sphere.png">
+      <img src="@/assets/main-sphere.png" class="reval-ini">
       <img class="absolute -top-[33px] -left-[52px]" src="@/assets/small-spheres.png">
       <img class="absolute -top-[144px] left-[325px]" src="@/assets/small-spheres.png">
       <img class="absolute top-[46px] -right-[128px]" src="@/assets/small-spheres.png">
@@ -88,11 +88,29 @@
 </template>
 
 <script setup>
-// import { ref } from 'vue';
-// const bool = ref(true)
-// const bgColor1 = ref('')
-// const bgColor2 = ref('#0c0c0c')
-// function toggle () {
-//   bool.value = !bool.value
-// }
+import { onMounted } from 'vue';
+import scrollReveal from 'scrollreveal';
+const scrollRev = scrollReveal()
+onMounted(() => {
+  scrollRev.reveal('.reval-ini', {
+    // 动画的时长
+    duration: 2600,
+    // 延迟时间
+    delay: 1700,
+    // 动画开始的位置，'bottom', 'left', 'top', 'right'
+    origin: 'top',
+    // 回滚的时候是否再次触发动画
+    reset: false,
+    // 在移动端是否使用动画
+    mobile: false,
+    // 滚动的距离，单位可以用%，rem等
+    // 其他可用的动画效果
+    opacity: 0.001,
+    easing: 'linear',
+    scale: 1,
+  })
+})
+
+
+
 </script>

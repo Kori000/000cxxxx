@@ -2,7 +2,7 @@
  * @Author: Kori
  * @Date: 2022-10-29 22:00:14
  * @LastEditors: Kori
- * @LastEditTime: 2022-11-01 02:09:09
+ * @LastEditTime: 2022-11-01 16:12:01
  * @FilePath: /portalverse_offcial/src/components/Game/Game.vue
  * @Description: 
  * 
@@ -20,24 +20,23 @@
         <!-- 要删除高度 -->
         <div id="Game-List" class="w-full h-[952px] flex flex-col justify-between items-center">
           <div id="Game-cart" class=" w-full h-[443px] relative flex justify-center items-center"
-            v-for="i, index in gameList" :key="index">
+            v-for="i, index in homeState.homeInfo.games" :key="index">
             <img src="../../assets/game-cart-hover.png" class=" w-full h-full absolute top-0 left-0 ">
-            <div class="z-30  w-full h-full absolute top-0 left-0 " @mouseleave="mouseLeave(index)"
+            <div class="z-30  w-full h-full absolute top-0 left-0" @mouseleave="mouseLeave(index)"
               @mouseover="mouseOver(index)"></div>
-            <img src="../../assets/game-cart.png" class=" w-full h-full absolute top-0 left-0 " v-show="i.borderShow">
+            <img src="../../assets/game-cart.png" class=" w-full h-full absolute top-0 left-0 " ref="whiteLine">
             <!-- 后续删尺寸 -->
             <div id="Game-box" class="w-[1078px] h-[368px]  flex justify-between flex-wrap relative">
               <!-- 游戏图片 -->
-              <img id="Game-img" :src="i.img" class="w-[544px] h-[368px]0">
+              <img id="Game-img" :src="i.cover_image" class="w-[544px] h-[368px]0">
               <!-- 游戏信息 -->
               <div id="Game-info" class="w-[454px] h-[258px]  flex flex-col justify-around pt-5">
                 <h6 class="font-semibold text-[26px] text-white leading-[31px]">{{ i.name }}</h6>
                 <div class="w-[180px] h-[40px]  relative flex justify-center items-center">
                   <img src="../../assets/game-border.png" class="absolute top-0 left-0">
-                  <p class="text-[#C0C0C0] text-center w-[150px] h-[25px] text-[14px] leading-6 ">Planned 2023 Release
-                  </p>
+                  <p class="text-[#C0C0C0] text-center w-[150px] h-[25px] text-[14px] leading-6 ">{{ i.tag }}</p>
                 </div>
-                <h5 class="font-medium text-[22px] leading-7 text-[#DCDCDCCC] pr-4">{{ i.text }}</h5>
+                <h5 class="font-medium text-[22px] leading-7 text-[#DCDCDCCC] pr-4">{{ i.introduction }}</h5>
               </div>
               <!-- 箭头标志 -->
               <img src="../../assets/game-sign.png" class="w-[74px] h-[64px] absolute bottom-4 right-10">
@@ -50,26 +49,34 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue';
-const gameList = reactive([
-  {
-    name: 'Abyssworld',
-    img: 'src/assets/game-1.png',
-    text: 'Abyssworld is primed to be the first Cloud and Chain Native AAA-level MMO.',
-    borderShow: true
-  },
-  {
-    name: 'OUTSET',
-    img: 'src/assets/game-2.png',
-    text: 'Abyssworld is primed to be the first Cloud and Chain Native AAA-level MMO.',
-    borderShow: true
-  }
-])
+import { reactive, computed } from 'vue';
+// const props = defineProps(['homeInfo'])
+
+import { HomeStore } from '@/store/index';
+
+let homeState = computed(() => HomeStore())
+
+
+// const gameList = reactive([
+//   {
+//     name: 'Abyssworld',
+//     cover_image: 'src/assets/game-1.png',
+//     introduction: 'Abyssworld is primed to be the first Cloud and Chain Native AAA-level MMO.',
+//     tag: 'Planned 2023 Release',
+//     borderShow: true
+//   },
+//   {
+//     name: 'OUTSET',
+//     cover_image: 'src/assets/game-2.png',
+//     introduction: 'Abyssworld is primed to be the first Cloud and Chain Native AAA-level MMO.',
+//     borderShow: true
+//   }
+// ])
 function mouseOver (index) {
-  gameList[index].borderShow = false
+  // gameList[index].borderShow = false
 }
 function mouseLeave (index) {
-  gameList[index].borderShow = true
+  // gameList[index].borderShow = true
 }
 </script>
 
