@@ -39,6 +39,7 @@ module.exports = {
         'Rectangle': "url('src/assets/Rectangle.png')",
         'Rectangle-hover': "url('src/assets/Rectangle-hover.png')",
         'Union': "url('src/assets/Union.png')",
+        'Union-md': "url('src/assets/Union-md.png')",
         'Blog-btn-border': "url('src/assets/blog-btn-border.png')",
         'Mission-border-line': "url('src/assets/Mission-border-line.png')",
       },
@@ -62,7 +63,8 @@ module.exports = {
           "100%": {
             backgroundPosition: "0"
           }
-        }
+        },
+        // 小球动画
       },
 
     }

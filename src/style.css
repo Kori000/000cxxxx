@@ -4,8 +4,9 @@
 @layer base {
   @font-face {
     font-family: "Inter";
-    src: url(./assets/font/Inter.woff);
+    src: url(./assets/font/Interr.woff);
   }
+
 }
 
 
@@ -73,4 +74,16 @@
 /* 背景图片自适应 */
 .custom-image-self {
   background-size: 100% 100%;
+}
+
+
+@keyframes aaa {
+  0% {
+    opacity: 0;
+    transform: translate(-125px, -125px);
+  }
+
+  100% {
+    transform: translateX(0, 0);
+  }
 }

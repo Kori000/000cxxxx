@@ -8,7 +8,7 @@
  * 
 -->
 <template>
-  <div class="mb-80">
+  <div class="mb-80 pt-32">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col min-h-screen  ">
       <div class="w-[1148px] h-screen flex flex-col justify-between">
         <div id="title" class="flex flex-col justify-between items-center">
@@ -19,7 +19,7 @@
             updated on Portalverse</h3>
         </div>
         <div id="main" class="w-[1148px] h-[700px] flex flex-col justify-between items-center  ">
-          <div id="blog-main-content" class="w-full h-[496px]  flex justify-between items-start ">
+          <div id="blog-main-content" class="w-full h-[496px] mt-20 flex justify-between items-start ">
             <div class="w-[554px]  flex flex-col justify-between z-10" v-for="i in homeInfo.blogs">
               <div class="w-[554px] h-[298px] relative ">
                 <img :src="i.cover_image

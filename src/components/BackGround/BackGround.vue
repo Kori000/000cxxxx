@@ -10,10 +10,10 @@
 <template>
   <div class=" max-w-[1440px]  relative ml-auto mr-auto">
     <!-- 球体 -->
-    <div class="absolute top-[197px] right-[171px] z-[1] lg:block hidden">
+    <div class="absolute top-[197px] right-[171px] z-[1] lg:block hidden border">
       <!-- 大球 -->
       <img src="@/assets/main-sphere.png" class="reval-ini max-w-[45vw]">
-      <img class="absolute -top-[33px] -left-[52px]" src="@/assets/small-spheres.png">
+      <img class="absolute -top-[33px] -left-[52px] reval-to-right" src="@/assets/small-spheres.png">
       <img class="absolute -top-[144px] left-[325px]" src="@/assets/small-spheres.png">
       <img class="absolute top-[46px] -right-[128px]" src="@/assets/small-spheres.png">
       <img class="absolute bottom-[53px] -right-[105px]" src="@/assets/small-spheres.png">
@@ -151,6 +151,25 @@ import { onMounted } from 'vue';
 import scrollReveal from 'scrollreveal';
 const scrollRev = scrollReveal()
 onMounted(() => {
+
+  scrollRev.reveal({
+    // 动画的时长
+    // duration: 1500,
+    // 延迟时间
+    // delay: 800,
+    // 动画开始的位置，'bottom', 'left', 'top', 'right'
+    // origin: 'top',
+    // 回滚的时候是否再次触发动画
+    reset: false,
+    // 在移动端是否使用动画
+    mobile: false,
+    // 滚动的距离，单位可以用%，rem等
+    // distance: '200px',
+    // 其他可用的动画效果
+    opacity: 0.001,
+    easing: 'linear',
+    scale: 1,
+  })
   scrollRev.reveal('.reval-ini', {
     // 动画的时长
     duration: 2600,
@@ -158,18 +177,8 @@ onMounted(() => {
     delay: 1700,
     // 动画开始的位置，'bottom', 'left', 'top', 'right'
     origin: 'top',
-    // 回滚的时候是否再次触发动画
-    reset: false,
-    // 在移动端是否使用动画
-    mobile: false,
-    // 滚动的距离，单位可以用%，rem等
-    // 其他可用的动画效果
-    opacity: 0.001,
-    easing: 'linear',
-    scale: 1,
   })
+
 })
-
-
 
 </script>

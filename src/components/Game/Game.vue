@@ -8,7 +8,7 @@
  * 
 -->
 <template>
-  <div class="mb-32">
+  <div class="pt-32 mb-32">
     <!-- 要删除高度 因为是动态添加 -->
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col h-full ">
       <div class="w-[1149px] h-[1118px] flex flex-col justify-between items-center">
