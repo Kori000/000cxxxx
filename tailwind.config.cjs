@@ -34,10 +34,13 @@ module.exports = {
       },
       backgroundImage: {
         'logo-container': "url('src/assets/nav-logo-container.png')",
+        // 移动端背景logo
+        'logo-container-md': "url('src/assets/nav-logo-container-md.png')",
         'Rectangle': "url('src/assets/Rectangle.png')",
         'Rectangle-hover': "url('src/assets/Rectangle-hover.png')",
         'Union': "url('src/assets/Union.png')",
-        'Blog-btn-border': "url('src/assets/blog-btn-border.png')"
+        'Blog-btn-border': "url('src/assets/blog-btn-border.png')",
+        'Mission-border-line': "url('src/assets/Mission-border-line.png')",
       },
       fontFamily: {
         "Inter": ["Inter", "sans-serif"],

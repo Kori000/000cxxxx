@@ -1,12 +1,3 @@
-<!--
- * @Author: Kori
- * @Date: 2022-10-29 21:58:18
- * @LastEditors: Kori
- * @LastEditTime: 2022-10-31 15:43:23
- * @FilePath: /portalverse_offcial/src/components/TimelineSection/TimelineSection.vue
- * @Description: 
- * 
--->
 <template>
   <div class="mb-32">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col min-h-screen ">
@@ -26,7 +17,7 @@
           <!-- 四个都是 框div + 线img 组合 -->
           <div id="left-timeline-1" class="absolute top-11 -left-4 w-[619px] h-[224px]">
             <div
-              class="w-[446px] h-[213px] mb-5 absolute right-[123px] bg-Rectangle  hover:bg-Rectangle-hover hover:h-[213px] text-white text-center leading-[213px]">
+              class="w-[446px] h-[213px] mb-5 absolute right-[123px] bg-Rectangle  hover:bg-Rectangle-hover hover:h-[213px]  text-white text-center leading-[213px]">
               <div class="">
                 <div class="w-[72px] h-[68px]  bg-[#DC36F8] filter blur-[59px]"></div>
 

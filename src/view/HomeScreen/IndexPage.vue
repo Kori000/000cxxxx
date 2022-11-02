@@ -15,19 +15,21 @@
       <BackGround class="relative "></BackGround>
     </div>
     <!-- 导航栏 -->
-    <Navigation class=" w-screen h-[104px] "></Navigation>
+    <Navigation class="hidden sm:flex w-screen md:h-[104px] "></Navigation>
+    <NavigationMd id="mdNav" class="sm:hidden w-screen h-[44px] "></NavigationMd>
+    <!-- 移动 -->
+    <!-- <Navigation class=" w-screen h-11  "></Navigation> -->
 
     <!-- 内容 -->
     <!-- <div class=" container mx-auto flex flex-col items-center"> -->
     <div class="container max-w-1440 mx-auto ">
-      <div class="rounded-md bg-cyan-500 w-[300px] h-[200px]">
-        <a href="#Blog" class="block w-full h-full">调走</a>
-      </div>
       <HeroCenter class=""></HeroCenter>
-      <MissionSection id="Vision"></MissionSection>
+      <MissionSection id="Vision" class="h-fit ">
+        <div class="bg-Mission-border-line custom-image-self w-full h-full absolute"></div>
+      </MissionSection>
       <PlayerBenefits id="Features" class=""></PlayerBenefits>
       <TimelineSection id="Milestones" class=""></TimelineSection>
-      <InvestorSection id="Milestones" :homeInfo="homeInfo"></InvestorSection>
+      <InvestorSection :homeInfo="homeInfo"></InvestorSection>
       <PostsSecton id="Blog" :homeInfo="homeInfo"></PostsSecton>
       <Game id="Game" :homeInfo="homeInfo" class=""></Game>
       <CutLine></CutLine>
@@ -47,6 +49,7 @@ import BackGround from "@/components/BackGround/BackGround.vue";
  * 根据页面结构从上到下
  */
 import Navigation from "@/components/Navigation/Navigation.vue";
+import NavigationMd from "@/components/Navigation/NavigationMd.vue";
 import HeroCenter from "@/components/HeroCenter/HeroCenter.vue";
 import MissionSection from "@/components/MissionSection/MissionSection.vue";
 import PlayerBenefits from "@/components/PlayerBenefits/PlayerBenefits.vue";
@@ -67,7 +70,7 @@ const homeInfo = ref({})
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
   // mock 不用.data 对接需要修改此处
-  homeInfo.value = res
+  homeInfo.value = res.data
 }
 getHomeInfo()
 </script>
