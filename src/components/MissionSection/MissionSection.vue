@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:mb-32 mb-16 md:pt-32">
+  <div class="sm:mb-32 mb-16 md:pt-32 sm:mt-0 mt-44">
     <div class="lg:mx-36 md:mx-12  flex justify-center items-start flex-col min-h-screen py-5 px-2 ">
       <!-- custom-border-gradient -->
       <div id="border-line" class="relative  w-full rounded-3xl  px-[30px] flex justify-center items-start  ">
@@ -8,7 +8,7 @@
           <div id="top-content"
             class=" max-w-[1026px] w-full flex justify-between flex-col items-center mt-[115px] xl:items-end xl:flex-row ">
             <div id="top-content-left" class=" w-full max-w-[619px] h-full flex flex-col items-center xl:items-start">
-              <h5 class="reval-bottommove text-white font-medium text-xl min-w[558px] font-Inter ">Our Vision</h5>
+              <h5 class="reval-bottommove text-white font-medium text-xl min-w[558px] font-Inter z-10 ">Our Vision</h5>
               <h3 class="linear-color animate-linear-color-animat font-semibold text-[2.1rem] sm:text-[55px] text-center xl:text-start  md:min-w-[400px] min-w-[370px] leading-10 sm:leading-[66px] mt-10 font-Inter-500 
                 reval-bottommove1">
                 Community Driven
@@ -47,7 +47,7 @@
           <div id="bottom-card"
             class=" w-full  flex flex-row justify-around flex-wrap items-center mt-16 sm:mt-28 font-Inter ">
             <div v-for="i, index in cart" :class="'reval-bottommove-cart' + index"
-              class=" relative h-[356px] sm:w-[334px] w-full bg-[#2B2B2B5C] rounded-2xl filter shadow-xl flex justify-center items-center mb-6 hover:-mt-8 ease-linear  ">
+              class=" relative h-[356px] sm:w-[334px] w-full bg-[#2B2B2B5C] rounded-2xl filter shadow-xl flex justify-center items-center mb-9 hover:-mt-8 ease-linear  ">
               <div class=" absolute top-30 right-7  w-[200px] h-[246px] ">
                 <div class=" rounded-full bg-[#DC36F8] w-[72px] h-[68px] absolute top-0 left-0  filter blur-[53px] ">
                 </div>
@@ -124,7 +124,7 @@ const cart = reactive([
   {
     title: 'Players',
     text: 'Play with content in the metaverse of their terms without hardware limitations or latency issues',
-    url: 'src/assets/Line-1.png'
+    url: 'src/assets/Line-1.png',
   },
   {
     title: 'Players',

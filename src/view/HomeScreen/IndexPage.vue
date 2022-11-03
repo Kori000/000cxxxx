@@ -1,14 +1,4 @@
-<!--
- * @Author: Kori
- * @Date: 2022-10-28 18:40:42
- * @LastEditors: Kori
- * @LastEditTime: 2022-11-01 16:50:06
- * @FilePath: /portalverse_offcial/src/view/HomeScreen/IndexPage.vue
- * @Description: 
- * 
--->
 <template>
-  <!-- 全局背景颜色--#0c0c0c -->
   <div class=" bg-black overflow-hidden ">
     <!-- 背景组件 -->
     <div>
@@ -17,8 +7,6 @@
     <!-- 导航栏 -->
     <Navigation class="hidden sm:flex w-screen md:h-[104px] "></Navigation>
     <NavigationMd id="mdNav" class="sm:hidden w-screen h-[44px] "></NavigationMd>
-    <!-- 移动 -->
-    <!-- <Navigation class=" w-screen h-11  "></Navigation> -->
 
     <!-- 内容 -->
     <!-- <div class=" container mx-auto flex flex-col items-center"> -->

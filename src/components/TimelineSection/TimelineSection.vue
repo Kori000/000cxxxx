@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-32 pt-32">
+  <div class="mb-32 sm:pt-32">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col min-h-screen ">
       <div id="container-box"
         class=" h-[1024px] sm:w-[1182px] w-[340px] flex flex-col justify-center sm:justify-around items-center pb-[120px]">

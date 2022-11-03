@@ -3,15 +3,20 @@
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col  lg:min-h-[830px] min-h-[353px]">
       <div class=" flex flex-col flex-wrap justify-between items-center max-w-[1275px] ">
         <h3
-          class="font-semibold sm:text-6xl text-[42px] leading-10 linear-color animate-linear-color-animat font-Inter-700 reval-bottommove">
+          class="font-semibold sm:text-6xl text-[42px] leading-10 linear-color animate-linear-color-animat font-Inter-700 reval-bottommove-feature">
           Features
         </h3>
         <div class="flex justify-around  mt-20 sm:mt-40  mx-auto flex-wrap  xl:flex-nowrap">
           <div
             class="sm:h-[397px] mx-7  w-[354px] sm:w-[276px]  flex flex-row sm:flex-col  justify-between items-center mb-14 xl:mb-0"
-            :class="'reval-bottommove-cart' + index" v-for="i,index in features">
+            :class="'reval-bottommove-feature' + index" v-for="i,index in features">
+            <!-- 横线 -->
+            <img :src="i.rowLine" class="xl:block hidden w-[200px] absolute h-[2px] top-[73px] -right-[127px] ">
+            <!-- 竖线 -->
+            <img :src="i.colLine"
+              class="sm:hidden block w-[200px] rotate-90 absolute h-[2px] bottom-[43px] -left-[45px] ">
+            <div class="sm:w-[134px] w-[108px] h-full relative">
 
-            <div class="sm:w-[134px] w-[108px] h-full">
               <img :src="i.icon" class="block sm:w-[134px] w-[134px] sm:h-[134px] h-[108px]">
             </div>
 
@@ -29,26 +34,78 @@
 </template>
 
 <script setup>
+import scrollReveal from 'scrollreveal';
 import { reactive, onMounted } from 'vue';
+
+const scrollRev = scrollReveal()
 onMounted(() => {
 
+  scrollRev.reveal('.reval-bottommove-feature', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 900,
+    distance: '70px',
+  })
+  scrollRev.reveal('.reval-bottommove-feature0', {
+    origin: 'bottom',
+    duration: 1400,
+    delay: 1350,
+    distance: '140px',
+  })
+  scrollRev.reveal('.reval-bottommove-feature1', {
+    origin: 'bottom',
+    duration: 1600,
+    delay: 1600,
+    distance: '140px',
+  })
+  scrollRev.reveal('.reval-bottommove-feature2', {
+    origin: 'bottom',
+    duration: 1850,
+    delay: 1900,
+    distance: '140px',
+  })
+  scrollRev.reveal('.reval-bottommove-feature3', {
+    origin: 'bottom',
+    duration: 1850,
+    delay: 2100,
+    distance: '140px',
+  })
 })
+
+
+
+
+
+
+
+
+
 
 const features = reactive([
   {
     tittle: 'P2P Game Streaming',
     text: 'Decentralised rendering of games will lead to lower latency and the ability for the service to scale with demand.',
-    icon: 'src/assets/Player-logo-1.png'
+    icon: 'src/assets/Player-logo-1.png',
+    rowLine: 'src/assets/features-line-row.png',
+    colLine: 'src/assets/features-line-col.png'
+
   },
   {
     tittle: 'Optimized Experience',
     text: 'Developers can focus quality metaverse experiences without hardware limitations and a consistent development workflow.',
-    icon: 'src/assets/Player-logo-2.png'
+    icon: 'src/assets/Player-logo-2.png',
+    rowLine: 'src/assets/features-line-row.png',
+    colLine: 'src/assets/features-line-col.png'
+
+
   },
   {
     tittle: 'Removing Hardware Limits',
     text: 'Device constraints are no longer an issue when cloud streaming. Complex experiences are rendered in the cloud.',
-    icon: 'src/assets/Player-logo-3.png'
+    icon: 'src/assets/Player-logo-3.png',
+    rowLine: 'src/assets/features-line-row.png',
+    colLine: 'src/assets/features-line-col.png'
+
   },
   {
     tittle: 'Existing Powerful Network',
