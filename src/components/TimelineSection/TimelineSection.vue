@@ -25,7 +25,7 @@
                 <div class="w-[72px] h-[68px]  bg-[#DC36F8] filter blur-[59px]"></div>
 
                 <div
-                  class="w-[218px] h-[144px] absolute  top-[35px] right-[62px] flex flex-col justify-between items-end ">
+                  class="w-[218px] h-[144px] absolute  top-[35px] md:right-[62px] right-[32px] flex flex-col justify-between items-end ">
                   <div class="w-[89px] h-[35px] btn-gradient rounded-md flex justify-center items-center">
                     <p class="text-[13px] font-semibold">Q1 2022</p>
                   </div>
@@ -44,7 +44,7 @@
               <div>
                 <div class="w-[58px] h-[55px] absolute -bottom-[27px] right-2 bg-[#6EA0FF] filter blur-[59px]"></div>
                 <div
-                  class="w-[218px] h-[144px] absolute  top-[35px] right-[62px] flex flex-col justify-between items-end">
+                  class="w-[218px] h-[144px] absolute  top-[35px] md:right-[62px] right-[32px] flex flex-col justify-between items-end">
                   <div class="w-[89px] h-[35px] btn-gradient rounded-md flex justify-center items-center">
                     <p class="text-[13px] font-semibold">Q1 2022</p>
                   </div>
@@ -69,7 +69,7 @@
 
                 <!-- 彩色Q + 文字 -->
                 <div
-                  class="w-[218px] h-[144px] absolute  top-[35px] left-[62px] flex flex-col justify-between items-start">
+                  class="w-[218px] h-[144px] absolute  top-[35px] md:left-[62px] left-[32px] flex flex-col justify-between items-start">
                   <div class="w-[89px] h-[35px] btn-gradient rounded-md flex justify-center items-center">
                     <p class="text-[13px] font-semibold">Q1 2022</p>
                   </div>
@@ -94,7 +94,7 @@
                 <!-- <div class="w-[446px] h-[213px] absolute top-0 left-0 timeline-blur opacity-10 blur-[2px]"></div> -->
                 <!-- 彩色Q + 文字 -->
                 <div
-                  class="w-[218px] h-[144px] absolute  top-[35px] left-[62px] flex flex-col justify-between items-start">
+                  class="w-[218px] h-[144px] absolute  top-[35px] md:left-[62px] left-[32px] flex flex-col justify-between items-start">
                   <div class="w-[89px] h-[35px] btn-gradient rounded-md flex justify-center items-center">
                     <p class="text-[13px] font-semibold">Q1 2022</p>
                   </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="mb-32">
     <div class=" flex justify-center">
-      <img src="../assets/cut-line.png" class="">
+      <img src="../assets/cut-line-md.png" class="min-w-[335px]">
     </div>
   </div>
 </template>

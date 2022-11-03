@@ -70,7 +70,7 @@ const homeInfo = ref({})
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
   // mock 不用.data 对接需要修改此处
-  homeInfo.value = res
+  homeInfo.value = res.data
 }
 getHomeInfo()
 </script>
