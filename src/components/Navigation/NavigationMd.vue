@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between ring-white backdrop-blur-[10px] fixed z-20">
+  <div class="flex justify-between ring-white backdrop-blur-[10px] fixed z-20 ">
     <div id="Logo"
       class="bg-logo-container custom-image-self w-[199px] h-full bg-no-repeat flex justify-center items-center ">
       <div class="flex justify-center items-center mr-10">

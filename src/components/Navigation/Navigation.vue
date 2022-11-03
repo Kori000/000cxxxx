@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between ring-white backdrop-blur-[10px] fixed z-20">
+  <div class="flex justify-between ring-white backdrop-blur-[10px] fixed z-20 ">
     <div id="Logo"
       class="bg-logo-container custom-image-self lg:w-[26vw] lg:h-[103px] bg-no-repeat flex justify-center items-center ">
       <div class="flex justify-center items-center mr-10">
@@ -8,12 +8,12 @@
       </div>
     </div>
     <div id="NavigationBar" class="flex-[2] hidden lg:block">
-      <div class="flex justify-around items-center w-full h-full pt-[42px]">
-        <h5><a class="nav-link py-10 px-3" href="#Vision">Vision</a></h5>
-        <h5><a class="nav-link py-10 px-3" href="#Features">Features</a></h5>
-        <h5><a class="nav-link py-10 px-3" href="#Milestones">Milestones</a></h5>
-        <h5><a class="nav-link py-10 px-3" href="#Blog">Blog</a></h5>
-        <h5><a class="nav-link py-10 px-3" href="#Game">Game</a></h5>
+      <div class="flex justify-around items-center w-full h-full pt-[42px] ">
+        <h5><a class="nav-link custom-nav-hover py-3 px-3 font-Inter" href="#Vision">Vision</a></h5>
+        <h5><a class="nav-link custom-nav-hover py-3 px-3 font-Inter" href="#Features">Features</a></h5>
+        <h5><a class="nav-link custom-nav-hover py-3 px-3 font-Inter" href="#Milestones">Milestones</a></h5>
+        <h5><a class="nav-link custom-nav-hover py-3 px-3 font-Inter" href="#Blog">Blog</a></h5>
+        <h5><a class="nav-link custom-nav-hover py-3 px-3 font-Inter" href="#Game">Game</a></h5>
       </div>
     </div>
     <!-- web -->

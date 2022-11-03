@@ -10,13 +10,14 @@
 <template>
   <div class=" max-w-[1440px]  relative ml-auto mr-auto">
     <!-- 球体 -->
-    <div class="absolute top-[197px] right-[171px] z-[1] lg:block hidden border">
+    <div class="absolute top-[197px] right-[171px] z-[1] lg:block hidden ">
       <!-- 大球 -->
       <img src="@/assets/main-sphere.png" class="reval-ini max-w-[45vw]">
-      <img class="absolute -top-[33px] -left-[52px] reval-to-right" src="@/assets/small-spheres.png">
-      <img class="absolute -top-[144px] left-[325px]" src="@/assets/small-spheres.png">
-      <img class="absolute top-[46px] -right-[128px]" src="@/assets/small-spheres.png">
-      <img class="absolute bottom-[53px] -right-[105px]" src="@/assets/small-spheres.png">
+      <!-- 小球 -->
+      <img class="absolute -top-[33px] -left-[52px] reval-to-right custom-sphere-one" src="@/assets/small-spheres.png">
+      <img class="absolute -top-[144px] left-[325px]  custom-sphere-two" src="@/assets/small-spheres.png">
+      <img class="absolute top-[46px] -right-[128px] custom-sphere-third" src="@/assets/small-spheres.png">
+      <img class="absolute bottom-[53px] -right-[105px] custom-sphere-four" src="@/assets/small-spheres.png">
     </div>
 
     <!-- 椭圆渐变块 -->
@@ -24,7 +25,7 @@
     <div class=" absolute top-[7336px] left-[380px] 
       w-[751px] h-[789px] 
       gradient-ellipse 
-       blur-[400px]">
+       blur-[400px] ">
     </div>
 
     <div class=" absolute top-[89px] -right-[18.5px] 
@@ -33,6 +34,7 @@
       blur-[250px]
       lg:block
       hidden
+      custom-halo-in
       ">
     </div>
 
@@ -44,7 +46,9 @@
     w-[239px] h-[286px]
     gradient-ellipse-mb
       blur-[100px]
-      z-10 ">
+      z-10 
+      custom-halo-in
+      ">
     </div>
 
     <div class="
@@ -82,65 +86,65 @@
 
 
 
-    <!-- web显示的球体 -->
+    <!-- web显示的光晕 -->
     <div class="hidden md:block  absolute top-[4426px] -right-[120px] 
       w-[366px] h-[385px] 
       gradient-ellipse 
-      blur-[125px]">
+      blur-[125px]  reval-in-halo">
     </div>
     <div class="hidden md:block  absolute top-[4975px] -left-[192px] 
     w-[366px] h-[385px]
     gradient-ellipse 
-      blur-[125px] ">
+      blur-[125px]  reval-in-halo">
     </div>
     <div class="hidden md:block  absolute top-[5543px] -right-[277px] 
     w-[366px] h-[385px]
     gradient-ellipse 
-      blur-[125px] ">
+      blur-[125px]  reval-in-halo">
     </div>
     <div class="hidden md:block  absolute top-[3082px] -left-[242px] 
     w-[366px] h-[385px]
     gradient-ellipse 
-      blur-[125px] ">
+      blur-[125px]  reval-in-halo">
     </div>
     <div class="hidden md:block  absolute top-[2204px]  -right-[198px] 
     w-[366px] h-[385px]
     gradient-ellipse 
-    blur-[400px]
+    blur-[400px] reval-in-halo
     ">
     </div>
     <div class="hidden md:block absolute top-[1004px] -left-[137px] 
     w-[667px] h-[667px]
-      bg-[#17002B] filter blur-[252px]">
+      bg-[#17002B] filter blur-[252px] reval-in-halo">
     </div>
     <div class="
     hidden md:block
     absolute top-[892px] -left-[121px] 
     w-[366px] h-[385px]
     gradient-ellipse 
-      blur-[125px] ">
+      blur-[125px]  reval-in-halo">
     </div>
     <div class="hidden md:block absolute top-[6261px] -left-[529px] 
     w-[933px] h-[981px]
     gradient-ellipse 
-      blur-[400px] ">
+      blur-[400px] reval-in-halo ">
     </div>
     <div class="hidden md:block absolute top-[5286px] -right-[461px] 
     w-[734px] h-[772px]
     gradient-ellipse 
-      blur-[400px] ">
+      blur-[400px]  reval-in-halo">
     </div>
     <div class="hidden md:block absolute 
     top-[2514px] -right-[198px] 
     w-[734px] h-[772px]
     gradient-ellipse 
    
-    blur-[400px] ">
+    blur-[400px]  reval-in-halo">
     </div>
     <div class="hidden md:block absolute top-[2886px] -left-[498px] 
     w-[734px] h-[772px]
     gradient-ellipse 
-      blur-[400px] ">
+      blur-[400px]  reval-in-halo">
     </div>
   </div>
 
@@ -178,7 +182,11 @@ onMounted(() => {
     // 动画开始的位置，'bottom', 'left', 'top', 'right'
     origin: 'top',
   })
-
+  scrollRev.reveal('.reval-in-halo', {
+    origin: 'bottom',
+    duration: 1000,
+    delay: 300,
+  })
 })
 
 </script>

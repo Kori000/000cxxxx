@@ -29,12 +29,22 @@ scrollRev.reveal({
 scrollRev.reveal('.reval-in', {
   origin: 'bottom',
   duration: 2500,
-  delay: 300,
+  delay: 400,
+})
+scrollRev.reveal('.reval-in-halo', {
+  origin: 'bottom',
+  duration: 1600,
+  delay: 400,
 })
 scrollRev.reveal('.reval-rightmove', {
   origin: 'right',
   duration: 1700,
   delay: 900,
   distance: '100px',
-
+})
+scrollRev.reveal('.reval-bottommove', {
+  origin: 'top',
+  duration: 1700,
+  delay: 800,
+  distance: '100px',
 })

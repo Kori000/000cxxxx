@@ -5,20 +5,20 @@
         class=" h-[1024px] sm:w-[1182px] w-[340px] flex flex-col justify-center sm:justify-around items-center pb-[120px]">
         <!-- 上方标题 -->
         <div id="title" class="h-[159px]  flex flex-col justify-around items-center mb-0 sm:mb-12">
-          <h5 class="text-xl leading-5 font-medium text-white text-center ">Milestones</h5>
+          <h5 class="text-xl leading-5 font-medium text-white text-center  font-Inter reval-bottommove">Milestones</h5>
           <h3
-            class="sm:text-6xl text-4xl font-semibold leading-10 mt-6 sm:leading-[3.75rem] linear-color animate-linear-color-animat">
+            class="sm:text-6xl text-[2.1rem] font-semibold leading-10 mt-6 sm:leading-[3.75rem]  linear-color animate-linear-color-animat font-Inter-700 reval-bottommove1">
             Roadmap to
             Market</h3>
         </div>
         <!-- web itemline 区域 -->
-        <div id="timeline_box" class="hidden sm:block relative  min-w-[1182px] min-h-[765px] items-center">
+        <div id="timeline_box" class="hidden sm:block relative  min-w-[1182px] min-h-[765px] items-center font-Inter">
           <!-- 中心线 -->
           <img id="midline" src="../../assets/MidLine-Milstones.png"
-            class=" absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
+            class=" absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] reval-in-time">
           <!-- 左1 -->
           <!-- 四个都是 框div + 线img 组合 -->
-          <div id="left-timeline-1" class="absolute top-11 -left-4 w-[619px] h-[224px]">
+          <div id="left-timeline-1" class="absolute top-11 -left-4 w-[619px] h-[224px] reval-bottommove-time0">
             <div
               class="w-[32vw] h-[213px] mb-5 absolute right-[123px] bg-Rectangle  hover:bg-Rectangle-hover  custom-image-self text-white text-center leading-[213px] ">
               <div class="">
@@ -38,7 +38,8 @@
             <img src="../../assets/Line-Milstones-right.png" class="absolute right-0 top-1/2 translate-y-[-50%]">
           </div>
           <!-- 左2 -->
-          <div id="left-timeline-2" class="absolute w-[619px] h-[224px] top-[309px] -left-[1rem]">
+          <div id="left-timeline-2"
+            class="absolute w-[619px] h-[224px] top-[309px] -left-[1rem] reval-bottommove-time2">
             <div
               class="w-[32vw] h-[213px] mb-5 absolute right-[123px] bg-Rectangle hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[213px] ">
               <div>
@@ -58,7 +59,8 @@
             <img src="../../assets/Line-Milstones-right.png" class="absolute right-0 top-1/2 translate-y-[-50%]">
           </div>
           <!-- 右1 -->
-          <div id="right-timeline-1" class="absolute w-[619px] h-[224px] top-44 -right-[1rem]">
+          <div id="right-timeline-1"
+            class="absolute w-[619px] h-[224px] top-44 -right-[1rem] reval-bottommove2 reval-bottommove-time1">
             <img src="../../assets/Line-Milstones-left.png" class="absolute left-0 top-1/2 translate-y-[-50%]">
             <div
               class="w-[32vw] h-[213px] mb-5 absolute left-[123px] bg-Rectangle hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[213px]">
@@ -83,7 +85,8 @@
 
           </div>
           <!-- 右2 -->
-          <div id="right-timeline-2" class="absolute w-[619px] h-[224px] top-[442px] -right-[1rem]">
+          <div id="right-timeline-2"
+            class="absolute w-[619px] h-[224px] top-[442px] -right-[1rem] reval-bottommove reval-bottommove-time3">
             <img src="../../assets/Line-Milstones-left.png" class="absolute left-0 top-1/2 translate-y-[-50%]">
             <div
               class="w-[32vw] h-[213px] mb-5 absolute left-[123px] bg-Rectangle hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[213px]">
@@ -112,9 +115,10 @@
           class="flex justify-center items-center relative sm:hidden w-screen min-w-[340px] min-h-[765px]  ">
           <!-- 中心线 -->
           <img id="midline" src="../../assets/MidLine-Milstones.png"
-            class="absolute top-[60%] left-12 -translate-y-1/2">
+            class="absolute top-[60%] left-12 -translate-y-1/2  reval-in">
           <!-- 1 -->
-          <div id="left-md-1" class="absolute w-[619px] h-[224px] top-[64px] left-[2.35rem] flex items-center">
+          <div id="left-md-1"
+            class="absolute w-[619px] h-[224px] top-[64px] left-[2.35rem] flex items-center reval-bottommove-time0">
             <img src="../../assets/Line-Milstones-left-md.png" class="absolute left-0 top-1/2 translate-y-[-50%]">
             <div
               class="w-[70vw] h-[160px] mb-5 absolute left-[57px] bg-Rectangle hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[160px]  flex justify-start items-center ">
@@ -135,7 +139,8 @@
             </div>
           </div>
           <!-- 2 -->
-          <div id="left-md-2" class="absolute w-[619px] h-[224px] top-[262] left-[2.35rem] flex items-center">
+          <div id="left-md-2"
+            class="absolute w-[619px] h-[224px] top-[262] left-[2.35rem] flex items-center reval-bottommove-time1">
             <img src="../../assets/Line-Milstones-left-md.png" class="absolute left-0 top-1/2 translate-y-[-50%]">
             <div
               class="w-[70vw] h-[160px] mb-5 absolute left-[57px] bg-Rectangle hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[160px]  flex justify-start items-center ">
@@ -156,7 +161,8 @@
             </div>
           </div>
           <!-- 3 -->
-          <div id="left-md-3" class="absolute w-[619px] h-[224px] top-[460px] left-[2.35rem] flex items-center">
+          <div id="left-md-3"
+            class="absolute w-[619px] h-[224px] top-[460px] left-[2.35rem] flex items-center reval-bottommove-time2">
             <img src="../../assets/Line-Milstones-left-md.png" class="absolute left-0 top-1/2 translate-y-[-50%]">
             <div
               class="w-[70vw] h-[160px] mb-5 absolute left-[57px] bg-Rectangle hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[160px]  flex justify-start items-center ">
@@ -177,7 +183,8 @@
             </div>
           </div>
           <!-- 4 -->
-          <div id="left-md-4" class="absolute w-[619px] h-[224px] top-[658px] left-[2.35rem] flex items-center">
+          <div id="left-md-4"
+            class="absolute w-[619px] h-[224px] top-[658px] left-[2.35rem] flex items-center reval-bottommove-time3">
             <img src="../../assets/Line-Milstones-left-md.png" class="absolute left-0 top-1/2 translate-y-[-50%]">
             <div
               class="w-[70vw] h-[160px] mb-5 absolute left-[57px] bg-Rectangle hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[160px]  flex justify-start items-center ">
@@ -206,7 +213,40 @@
 </template>
 
 <script setup>
-
+import { onMounted } from 'vue';
+import scrollReveal from 'scrollreveal';
+const scrollRev = scrollReveal()
+onMounted(() => {
+  scrollRev.reveal('.reval-in-time', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 1200,
+  })
+  scrollRev.reveal('.reval-bottommove-time0', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 1600,
+    distance: '130px',
+  })
+  scrollRev.reveal('.reval-bottommove-time1', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 1900,
+    distance: '130px',
+  })
+  scrollRev.reveal('.reval-bottommove-time2', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 2200,
+    distance: '130px',
+  })
+  scrollRev.reveal('.reval-bottommove-time3', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 2500,
+    distance: '130px',
+  })
+})
 </script>
 
 <style lang="scss" scoped>

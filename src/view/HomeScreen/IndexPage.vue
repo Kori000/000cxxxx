@@ -25,7 +25,8 @@
     <div class="container max-w-1440 mx-auto ">
       <HeroCenter class=""></HeroCenter>
       <MissionSection id="Vision" class="h-fit ">
-        <div class="bg-Mission-border-line custom-image-self w-full h-full absolute"></div>
+        <div class="hidden sm:block bg-Mission-border-line custom-image-self w-full h-full absolute reval-in"></div>
+        <div class="block sm:hidden bg-Mission-border-line-md custom-image-self w-full h-full absolute reval-in"></div>
       </MissionSection>
       <PlayerBenefits id="Features" class=""></PlayerBenefits>
       <TimelineSection id="Milestones" class=""></TimelineSection>
@@ -48,17 +49,29 @@ import BackGround from "@/components/BackGround/BackGround.vue";
 /**
  * 根据页面结构从上到下
  */
+// 导航栏
 import Navigation from "@/components/Navigation/Navigation.vue";
+// 移动端导航
 import NavigationMd from "@/components/Navigation/NavigationMd.vue";
+// 主页
 import HeroCenter from "@/components/HeroCenter/HeroCenter.vue";
+// Our Vision
 import MissionSection from "@/components/MissionSection/MissionSection.vue";
+// Features
 import PlayerBenefits from "@/components/PlayerBenefits/PlayerBenefits.vue";
+// Milestones
 import TimelineSection from "@/components/TimelineSection/TimelineSection.vue";
+// Investors and Partners
 import InvestorSection from "@/components/InvestorSection/InvestorSection.vue";
+// Blog
 import PostsSecton from "@/components/PostsSecton/PostsSecton.vue";
+// Games
 import Game from "@/components/Game/Game.vue";
+// 分割线
 import CutLine from "@/components/CutLine.vue";
+// Get Updates
 import NewsletterSection from "@/components/NewsletterSection/NewsletterSection.vue";
+// 页脚
 import Footer from "@/components/Footer/Footer.vue";
 
 // 获取页面信息API
@@ -70,7 +83,7 @@ const homeInfo = ref({})
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
   // mock 不用.data 对接需要修改此处
-  homeInfo.value = res.data
+  homeInfo.value = res
 }
 getHomeInfo()
 </script>

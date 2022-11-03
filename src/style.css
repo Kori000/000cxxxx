@@ -4,7 +4,7 @@
 @layer base {
   @font-face {
     font-family: "Inter";
-    src: url(./assets/font/Interr.woff);
+    src: url(./assets/font/Inter.woff);
   }
 
 }
@@ -76,14 +76,122 @@
   background-size: 100% 100%;
 }
 
+/* 导航的hover */
+.custom-nav-hover:hover {
+  background-image: linear-gradient(109.4deg, #75DAF3 40%,
+      #4553F2,
+      #7623F5 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100%;
+}
 
-@keyframes aaa {
+/* 小球1的动画 */
+.custom-sphere-one {
+  z-index: -2;
+  animation: sp1 4s ease;
+}
+
+@keyframes sp1 {
   0% {
     opacity: 0;
-    transform: translate(-125px, -125px);
+    transform: translate(177px, 177px);
+  }
+
+  60% {
+    opacity: 0;
   }
 
   100% {
     transform: translateX(0, 0);
+    opacity: 1;
+
+  }
+}
+
+/* 小球2的动画 */
+.custom-sphere-two {
+  z-index: -2;
+  animation: sp2 4s ease;
+}
+
+@keyframes sp2 {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 177px);
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0, 0);
+    opacity: 1;
+
+  }
+}
+
+/* 小球3的动画 */
+.custom-sphere-third {
+  z-index: -2;
+  animation: sp3 4s ease;
+}
+
+@keyframes sp3 {
+  0% {
+    opacity: 0;
+    transform: translate(-177px, 177px);
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0, 0);
+    opacity: 1;
+
+  }
+}
+
+/* 小球4的动画 */
+.custom-sphere-four {
+  z-index: -2;
+  animation: sp4 4s ease;
+}
+
+@keyframes sp4 {
+  0% {
+    opacity: 0;
+    transform: translate(-107px, -30px);
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0, 0);
+    opacity: 1;
+
+  }
+}
+
+
+/* 光晕渐入动画 */
+.custom-halo-in {
+  animation: haloIn 2.3s ease-in-out;
+}
+
+@keyframes haloIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+
   }
 }

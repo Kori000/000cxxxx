@@ -42,6 +42,7 @@ module.exports = {
         'Union-md': "url('src/assets/Union-md.png')",
         'Blog-btn-border': "url('src/assets/blog-btn-border.png')",
         'Mission-border-line': "url('src/assets/Mission-border-line.png')",
+        'Mission-border-line-md': "url('src/assets/Mission-border-line-md.png')",
       },
       fontFamily: {
         "Inter": ["Inter", "sans-serif"],

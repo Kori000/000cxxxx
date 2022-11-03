@@ -4,14 +4,14 @@
       <div class="lg:w-[940px]  flex flex-col justify-between ">
         <div id="title" class="mb-[40px] sm:mb-[110px]">
           <h3
-            class="text-[36px] lg:text-[55px] font-semibold leading-[66px] text-center linear-color animate-linear-color-animat">
+            class="text-[36px] lg:text-[55px] font-semibold leading-[66px] text-center linear-color animate-linear-color-animat font-Inter-700 reval-in-Inv">
             Investors and
             Partners</h3>
         </div>
         <div id="sponsor" class=" lg:w-[940px] lg:h-[1133px]  flex flex-col  md:justify-between items-center ">
           <!-- 上方Investors -->
           <div id="Investors"
-            class="hidden  w-[600px] lg:w-full mb-14 md:flex justify-between flex-wrap lg:flex-nowrap">
+            class="hidden w-[600px] lg:w-full mb-14 md:flex justify-between flex-wrap lg:flex-nowrap reval-bottommove-Inv0  ">
             <div
               class=" w-[142px] md:w-[245px] h-[49px] md:h-full flex  lg:flex-col justify-center lg:justify-between items-center mx-3 mb-5 "
               v-for="i in homeInfo.investors">
@@ -30,7 +30,7 @@
           </div>
 
           <!-- 移动端Investors -->
-          <div id="Investors" class=" w-[500px]  md:hidden  flex justify-center flex-wrap  px-17">
+          <div id="Investors" class=" w-[500px]  md:hidden  flex justify-center flex-wrap  px-17 reval-bottommove-Inv0">
             <div
               class="max-w-[200px] w-[200px] max-h-[100px]  h-[100px]  mb-5 flex items-baseline justify-around relative "
               v-for="i in homeInfo.investors ">
@@ -46,11 +46,11 @@
           </div>
 
           <!-- 中线 -->
-          <img id="line" class="w-full mb-14" src="../../assets/sponsor-line.png">
+          <img id="line" class="w-full mb-14 reval-bottommove-Inv1" src="../../assets/sponsor-line.png">
 
           <!-- 下方Partners -->
           <div id="Partners"
-            class=" flex md:justify-between justify-start flex-wrap mb-28 md:pl-0 pl-[50px]  md:max-w-full max-w-[500px]">
+            class=" flex md:justify-between justify-start flex-wrap md:pl-0 pl-[50px]  md:max-w-full max-w-[500px] reval-bottommove-Inv2">
             <div
               class="md:w-[289px] w-[110px]  md:h-[204.66666667px] md:max-h-full max-h-[100px] flex justify-center items-center md:mx-0 m-3"
               v-for="i in homeInfo.partners">
@@ -65,7 +65,35 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
+import scrollReveal from 'scrollreveal';
 defineProps(['homeInfo'])
-
+const scrollRev = scrollReveal()
+onMounted(() => {
+  scrollRev.reveal('.reval-in-Inv', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 900,
+  })
+  scrollRev.reveal('.reval-bottommove-Inv0', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 1200,
+    distance: '130px',
+  })
+  scrollRev.reveal('.reval-bottommove-Inv1', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 1400,
+    distance: '130px',
+  })
+  scrollRev.reveal('.reval-bottommove-Inv2', {
+    origin: 'bottom',
+    duration: 1700,
+    delay: 1600,
+    distance: '130px',
+  })
+  
+})
 
 </script>
