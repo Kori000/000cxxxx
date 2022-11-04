@@ -17,15 +17,16 @@
       </div>
     </div>
     <!-- web -->
-    <div id="Links" class=" w-[290px]  flex  justify-end items-center pt-[42px] pr-11 pl-[20px] flex-[1]">
-      <a href="https://github.com/Portalverse-Network" target="_blank" class="mr-[30px] ">
-        <img src="@/assets/svg/Github.svg" alt="Github" class="w-[30px] h-[35px]">
+    <div id="Links" class=" w-[290px]  flex  justify-end items-center pt-[42px] pr-11 pl-[20px] flex-[1] ">
+      <a href="https://github.com/Portalverse-Network" target="_blank" class="mr-[30px]  ">
+        <i class="fa-brands fa-github text-3xl text-white custom-nav-right-hover"></i>
       </a>
-      <a href="https://twitter.com/Portalverse_Net" target="_blank" class="mr-[30px]">
-        <img src="@/assets/svg/Twitter.svg" alt="Twitter" class="w-[30px] h-[35px]">
+      <a href="https://twitter.com/Portalverse_Net" target="_blank" class="mr-[30px] ">
+        <!-- <img src="@/assets/svg/Twitter.svg" alt="Twitter" class="w-[30px] h-[35px]"> -->
+        <i class="fa-brands fa-twitter text-3xl text-white custom-nav-right-hover"></i>
       </a>
-      <a href="https://discord.gg/portalverse" target="_blank" class="mr-[30px]">
-        <img src="@/assets/svg/Discord.svg" alt="Discord" class="w-[38px] h-[35px]">
+      <a href="https://discord.gg/portalverse" target="_blank" class="mr-[30px] ">
+        <i class="fa-brands fa-discord text-3xl text-white custom-nav-right-hover"></i>
       </a>
     </div>
   </div>

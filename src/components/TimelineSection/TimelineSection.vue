@@ -12,10 +12,10 @@
             Market</h3>
         </div>
         <!-- web itemline 区域 -->
-        <div id="timeline_box" class="hidden sm:block relative  min-w-[1182px] min-h-[765px] items-center font-Inter">
+        <div id="timeline_box" class="hidden sm:block relative  min-w-[1182px] min-h-[765px]  items-center font-Inter">
           <!-- 中心线 -->
           <img id="midline" src="../../assets/MidLine-Milstones.png"
-            class=" absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] reval-in-time">
+            class=" absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] reval-in-time h-[800px]">
           <!-- 左1 -->
           <!-- 四个都是 框div + 线img 组合 -->
           <div id="left-timeline-1" class="absolute top-11 -left-4 w-[619px] h-[224px] reval-bottommove-time0">
@@ -220,30 +220,30 @@ onMounted(() => {
   scrollRev.reveal('.reval-in-time', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1200,
+    delay: 600,
   })
   scrollRev.reveal('.reval-bottommove-time0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1600,
+    delay: 900,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-time1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1900,
+    delay: 1200,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-time2', {
     origin: 'bottom',
     duration: 1700,
-    delay: 2200,
+    delay: 1500,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-time3', {
     origin: 'bottom',
     duration: 1700,
-    delay: 2500,
+    delay: 1800,
     distance: '130px',
   })
 })

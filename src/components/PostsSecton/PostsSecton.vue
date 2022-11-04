@@ -16,9 +16,10 @@
             class="w-full mt-20 flex lg:justify-between justify-center items-start flex-wrap relative lg:mb-20 reval-in-Blog">
             <div class="w-[554px]  flex flex-col justify-between items-center z-10 lg:mb-0 sm:mb-20 mb-24 "
               v-for="i, index in homeInfo.blogs">
-              <div class="sm:w-[554px] w-[346px] sm:h-[298px] h-[186px] relative  overflow-hidden">
+              <div class="sm:w-[554px] w-[346px] sm:h-[298px] h-[186px] relative rounded-2xl overflow-hidden">
                 <img :src="i.cover_image
-                " class="hover:scale-125">
+                " class="hover:scale-125  transition-all
+          duration-500">
                 <img src="../../assets/blog-line.png" class="absolute -bottom-[2px] left-0 ">
               </div>
               <p
@@ -50,11 +51,10 @@
                 </linearGradient>
               </defs>
             </svg>
-            <h3
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold font-Inter ">
-              Browse
+            <a href="https://medium.com/@PORTALVERSE_NETWORK" target="_blank"
+              class="w-full h-full leading-[64px] text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold font-Inter hover:text-xl transition-all hover:leading-[64px] select-none">Browse
               Articles
-            </h3>
+            </a>
           </div>
         </div>
       </div>
@@ -75,33 +75,31 @@ onMounted(() => {
   scrollRev.reveal('.reval-in-Blog', {
     origin: 'bottom',
     duration: 1600,
-    delay: 900,
+    delay: 500,
     distance: '80px',
   })
 
   scrollRev.reveal('.reval-bottommove-Blog0', {
     origin: 'bottom',
     duration: 1200,
-    delay: 1200,
+    delay: 800,
     distance: '60px',
   })
   scrollRev.reveal('.reval-bottommove-Blog1', {
     origin: 'bottom',
     duration: 1900,
-    delay: 1900,
+    delay: 1000,
     distance: '60px',
   })
   scrollRev.reveal('.reval-bottommove-Blog2', {
     origin: 'bottom',
     duration: 1700,
-    delay: 2300,
+    delay: 800,
     distance: '60px',
   })
-
-
-
-
 })
+
+
 
 </script>
 

@@ -15,9 +15,6 @@ module.exports = {
       '200%': '200%',
     },
 
-    // screens: {
-    //   'xl': '1440px'
-    // },
     extend: {
       maxWidth: {
         "1440": "90rem"
@@ -33,16 +30,16 @@ module.exports = {
         "linear-light-end": "#75DAF3",
       },
       backgroundImage: {
-        'logo-container': "url('src/assets/nav-logo-container.png')",
+        'logo-container': "url('@/assets/nav-logo-container.png')",
         // 移动端背景logo
-        'logo-container-md': "url('src/assets/nav-logo-container-md.png')",
-        'Rectangle': "url('src/assets/Rectangle.png')",
-        'Rectangle-hover': "url('src/assets/Rectangle-hover.png')",
-        'Union': "url('src/assets/Union.png')",
-        'Union-md': "url('src/assets/Union-md.png')",
-        'Blog-btn-border': "url('src/assets/blog-btn-border.png')",
-        'Mission-border-line': "url('src/assets/Mission-border-line.png')",
-        'Mission-border-line-md': "url('src/assets/Mission-border-line-md.png')",
+        'logo-container-md': "url('@/assets/nav-logo-container-md.png')",
+        'Rectangle': "url('@/assets/Rectangle.png')",
+        'Rectangle-hover': "url('@/assets/Rectangle-hover.png')",
+        'Union': "url('@/assets/Union.png')",
+        'Union-md': "url('@/assets/Union-md.png')",
+        'Blog-btn-border': "url('@/assets/blog-btn-border.png')",
+        'Mission-border-line': "url('@/assets/Mission-border-line.png')",
+        'Mission-border-line-md': "url('@/assets/Mission-border-line-md.png')",
       },
       fontFamily: {
         "Inter": ["Inter", "sans-serif"],

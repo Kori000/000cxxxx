@@ -34,6 +34,15 @@
 </template>
 
 <script setup>
+import Playerlogo1 from '../../assets/Player-logo-1.png';
+import featureslinerow from '../../assets/features-line-row.png';
+import featureslinecol from '../../assets/features-line-col.png';
+import Playerlogo2 from '../../assets/Player-logo-2.png';
+import Playerlogo3 from '../../assets/Player-logo-3.png';
+import Playerlogo4 from '../../assets/Player-logo-4.png';
+
+
+
 import scrollReveal from 'scrollreveal';
 import { reactive, onMounted } from 'vue';
 
@@ -73,44 +82,33 @@ onMounted(() => {
 })
 
 
-
-
-
-
-
-
-
-
 const features = reactive([
   {
     tittle: 'P2P Game Streaming',
     text: 'Decentralised rendering of games will lead to lower latency and the ability for the service to scale with demand.',
-    icon: 'src/assets/Player-logo-1.png',
-    rowLine: 'src/assets/features-line-row.png',
-    colLine: 'src/assets/features-line-col.png'
-
+    icon: Playerlogo1,
+    rowLine: featureslinerow,
+    colLine: featureslinecol
   },
   {
     tittle: 'Optimized Experience',
     text: 'Developers can focus quality metaverse experiences without hardware limitations and a consistent development workflow.',
-    icon: 'src/assets/Player-logo-2.png',
-    rowLine: 'src/assets/features-line-row.png',
-    colLine: 'src/assets/features-line-col.png'
-
-
+    icon: Playerlogo2,
+    rowLine: featureslinerow,
+    colLine: featureslinecol
   },
   {
     tittle: 'Removing Hardware Limits',
     text: 'Device constraints are no longer an issue when cloud streaming. Complex experiences are rendered in the cloud.',
-    icon: 'src/assets/Player-logo-3.png',
-    rowLine: 'src/assets/features-line-row.png',
-    colLine: 'src/assets/features-line-col.png'
+    icon: Playerlogo3,
+    rowLine: featureslinerow,
+    colLine: featureslinecol
 
   },
   {
     tittle: 'Existing Powerful Network',
     text: 'The most common graphics cards being used for mining were built for gaming. Making them fit for purpose without significant changes.',
-    icon: 'src/assets/Player-logo-4.png'
+    icon: Playerlogo4
   }
 
 ])

@@ -47,7 +47,7 @@
           <div id="bottom-card"
             class=" w-full  flex flex-row justify-around flex-wrap items-center mt-16 sm:mt-28 font-Inter ">
             <div v-for="i, index in cart" :class="'reval-bottommove-cart' + index"
-              class=" relative h-[356px] sm:w-[334px] w-full bg-[#2B2B2B5C] rounded-2xl filter shadow-xl flex justify-center items-center mb-9 hover:-mt-8 ease-linear  ">
+              class=" relative h-[356px] sm:w-[334px] w-full bg-[#2B2B2B5C] rounded-2xl filter shadow-xl flex justify-center items-center mb-9 sm:hover:-mt-8 ease-linear  transition-all duration-200 ">
               <div class=" absolute top-30 right-7  w-[200px] h-[246px] ">
                 <div class=" rounded-full bg-[#DC36F8] w-[72px] h-[68px] absolute top-0 left-0  filter blur-[53px] ">
                 </div>
@@ -69,6 +69,10 @@
 </template>
 
 <script setup>
+import Line1 from '../../assets/Line-1.png';
+import Line2 from '../../assets/Line-2.png';
+import Line3 from '../../assets/Line-3.png';
+
 import { ref, reactive } from 'vue';
 import { onMounted } from 'vue';
 import scrollReveal from 'scrollreveal';
@@ -77,43 +81,43 @@ onMounted(() => {
   scrollRev.reveal('.reval-bottommove', {
     origin: 'bottom',
     duration: 1700,
-    delay: 700,
+    delay: 0,
     distance: '70px',
   })
   scrollRev.reveal('.reval-bottommove1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1000,
+    delay: 400,
     distance: '100px',
   })
   scrollRev.reveal('.reval-bottommove2', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1300,
+    delay: 600,
     distance: '100px',
   })
   scrollRev.reveal('.reval-bottommove-cart0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1600,
+    delay: 850,
     distance: '100px',
   })
   scrollRev.reveal('.reval-bottommove-cart1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1750,
+    delay: 1050,
     distance: '100px',
   })
   scrollRev.reveal('.reval-bottommove-cart2', {
     origin: 'bottom',
-    duration: 1700,
-    delay: 1900,
+    duration: 1300,
+    delay: 1300,
     distance: '100px',
   })
   scrollRev.reveal('.reval-bottommove-cart3', {
     origin: 'bottom',
     duration: 1850,
-    delay: 1900,
+    delay: 1600,
     distance: '100px',
   })
 })
@@ -124,17 +128,17 @@ const cart = reactive([
   {
     title: 'Players',
     text: 'Play with content in the metaverse of their terms without hardware limitations or latency issues',
-    url: 'src/assets/Line-1.png',
+    url: Line1,
   },
   {
     title: 'Players',
     text: 'Play with content in the metaverse of their terms without hardware limitations or latency issues',
-    url: 'src/assets/Line-2.png'
+    url: Line2
   },
   {
     title: 'Players',
     text: 'Play with content in the metaverse of their terms without hardware limitations or latency issues',
-    url: 'src/assets/Line-3.png'
+    url: Line3
   },
 ])
 </script>

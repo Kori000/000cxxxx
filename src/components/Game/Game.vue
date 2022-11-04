@@ -89,22 +89,21 @@ onMounted(() => {
   scrollRev.reveal('.reval-bottommove-Game1-0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1600,
+    delay: 1200,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Game1-1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1600,
+    delay: 1200,
     distance: '130px',
   })
 
 })
-
-
 // 深拷贝源数组
 const deepcopy = JSON.parse(JSON.stringify(porps.homeInfo.games))
 
+console.log(deepcopy)
 function mouseOver (index) {
   let item = porps.homeInfo.games[index]
   item.id = -1

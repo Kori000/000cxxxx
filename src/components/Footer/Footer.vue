@@ -15,8 +15,12 @@
       <div id="middle" class="hidden lg:block w-[123px] h-[28px] "></div>
       <div id="right" class=" text-end  sm:mt-0 mt-6 ">
         <div>
-          <p class="font-semibold md:text-lg text-xs md:leading-[14px] leading-[19.36px] ">Privacy Policy • Terms of
-            Service</p>
+          <p class="font-semibold md:text-lg text-[0.6rem] md:leading-[14px] leading-[19.36px] ">
+            <a href="javascript:">Privacy Policy</a>
+            •
+            <a href="javascript:">Terms of Service</a>
+
+          </p>
         </div>
       </div>
     </div>

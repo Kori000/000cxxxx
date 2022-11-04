@@ -4,7 +4,7 @@
       <div class="lg:w-[940px]  flex flex-col justify-between ">
         <div id="title" class="mb-[40px] sm:mb-[110px]">
           <h3
-            class="text-[36px] lg:text-[55px] font-semibold leading-[66px] text-center linear-color animate-linear-color-animat font-Inter-700 reval-in-Inv">
+            class="text-[8vw] lg:text-[55px] font-semibold leading-[66px] text-center linear-color animate-linear-color-animat font-Inter-700 reval-in-Inv">
             Investors and
             Partners</h3>
         </div>
@@ -78,19 +78,19 @@ onMounted(() => {
   scrollRev.reveal('.reval-bottommove-Inv0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1200,
+    delay: 1100,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Inv1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1400,
+    delay: 1200,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Inv2', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1600,
+    delay: 1300,
     distance: '130px',
   })
   

@@ -6,10 +6,10 @@
     </div>
     <!-- 导航栏 -->
     <Navigation class="hidden sm:flex w-screen md:h-[104px] "></Navigation>
+    <!-- 移动端导航 -->
     <NavigationMd id="mdNav" class="sm:hidden w-screen h-[44px] "></NavigationMd>
 
     <!-- 内容 -->
-    <!-- <div class=" container mx-auto flex flex-col items-center"> -->
     <div class="container max-w-1440 mx-auto ">
       <HeroCenter class=""></HeroCenter>
       <MissionSection id="Vision" class="h-fit ">
@@ -70,8 +70,7 @@ const homeInfo = ref({})
 // 发起请求
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
-  // mock 不用.data 对接需要修改此处
-  homeInfo.value = res
+  homeInfo.value = res.data
 }
 getHomeInfo()
 </script>

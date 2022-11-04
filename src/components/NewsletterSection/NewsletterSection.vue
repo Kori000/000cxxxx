@@ -32,7 +32,7 @@
           </div>
           <div
             class="md:w-[281px] w-[312px] h-[64px] rounded-[20px] border flex justify-center items-center hover:text-black hover:bg-white cursor-pointer active:bg-transparent  active:text-white md:mt-0 mt-5 md:bg-transparent bg-white md:text-white text-black ">
-            <div class="font-bold text-lg  text-center select-none">Subscribe</div>
+            <div class="font-bold text-lg  text-center select-none" @click="subscribeBtn">Subscribe</div>
           </div>
         </div>
       </div>
@@ -41,9 +41,8 @@
 </template>
 
 <script setup>
-
+function subscribeBtn () {
+  alert('功能未开启')
+} 
 </script>
 
-<style lang="scss" scoped>
-
-</style>

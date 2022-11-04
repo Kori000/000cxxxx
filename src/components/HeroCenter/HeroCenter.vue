@@ -1,14 +1,14 @@
 <template>
-  <div class="md:mb-32 ">
+  <div class="md:mb-32 mt-12">
     <div class=" lg:mx-36 ld:mx-12 mx-0 flex justify-center xl:items-start items-center flex-col  min-h-screen ">
       <!-- 主体内容 -->
       <div id="hero_main "
-        class="reval-in md:w-full  text-white  z-10 lg:pt-52  md:max-w-2xl  max-w-md lg:mr-12 lg:block flex flex-col justify-center items-center ">
+        class=" reval-in md:w-full  text-white  z-10 lg:pt-52  md:max-w-[45rem]  max-w-md lg:mr-12 lg:block flex flex-col justify-center items-center ">
         <h5 class=" text-xl font-medium leading-6 lg:text-left text-center lg:mb-2 mb-6 font-Inter">Portalverse Network
         </h5>
         <!-- 大标题+动画 -->
         <h1
-          class="lg:text-8xl  md:text-7xl text-[54px]  lg:font-bold  font-semibold lg:leading-[130px] md:leading-[80px]  leading-[64px] tracking-wide lg:text-left text-center linear-color animate-linear-color-animat lg:w-auto md:w-[500px] w-[363px] ">
+          class="lg:text-8xl  md:text-6xl sm:text-5xl text-[50px]  lg:font-bold  font-semibold lg:leading-[130px] md:leading-[80px]  leading-[64px] tracking-wide lg:text-left text-center linear-color animate-linear-color-animat lg:w-auto md:w-[500px] sm:w-[403px]  w-[423px] ">
           Decentralized Real-Time Cloud Gaming</h1>
         <!-- 描述小于1024显示 -->
         <div id=" hero_describe-1024 "
@@ -25,14 +25,20 @@
         </div>
         <div id="btn_com"
           class=" flex mt-12 font-bold text-lg md:flex-row flex-col md:items-start items-center font-Inter-700">
-          <button class="w-72 h-16 rounded-[20px] mr-2
+          <a href="https://discord.gg/portalverse" target="_blank" class="flex justify-center items-center w-72 h-16 rounded-[20px] mr-2 hover:text-2xl hover:leading-[1.5rem]
           mb-14 md:mb-0
           btn-gradient
-           "><a href="https://discord.gg/portalverse" target="_blank">Join Discord</a></button>
+          transition-all
+          duration-300
+           ">Join Discord</a>
           <button class="flex justify-evenly items-center w-60 h-14">
-            <a href="https://discord.gg/portalverse" target="_blank">Read Whitepaper</a>
+            <a href="https://discord.gg/portalverse" target="_blank" class="hover:text-xl transition-all 
+          duration-300">Read
+              Whitepaper</a>
             <div class="">
-              <img src="@/assets/svg/RightArrow.svg">
+              <a href="https://discord.gg/portalverse" target="_blank" class="hover:text-xl transition-all 
+          duration-300"><img src="@/assets/svg/RightArrow.svg "></a>
+
             </div>
           </button>
         </div>
