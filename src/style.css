@@ -81,7 +81,19 @@
   -webkit-background-clip: text;
   color: transparent;
   background-size: 100%;
+  transition: all 0.3s;
 }
+
+
+/* nav icon 渐变 */
+.custom-nav-right-hover:hover {
+  background: linear-gradient(109.03deg, #75DAF3 11.94%, #4553F2 51.8%, #7623F5 85.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 
 /* 小球1的动画 */
 .custom-sphere-one {
@@ -190,15 +202,4 @@
     opacity: 1;
 
   }
-}
-
-/* nav渐变 */
-
-
-.custom-nav-right-hover:hover {
-  background: linear-gradient(109.03deg, #75DAF3 11.94%, #4553F2 51.8%, #7623F5 85.1%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }

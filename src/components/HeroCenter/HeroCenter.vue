@@ -25,18 +25,18 @@
         </div>
         <div id="btn_com"
           class=" flex mt-12 font-bold text-lg md:flex-row flex-col md:items-start items-center font-Inter-700">
-          <a href="https://discord.gg/portalverse" target="_blank" class="flex justify-center items-center w-72 h-16 rounded-[20px] mr-2 hover:text-2xl hover:leading-[1.5rem]
+          <a href="https://discord.gg/portalverse" target="_blank" class="flex justify-center items-center w-72 h-16 rounded-[20px] mr-2 sm:hover:text-2xl sm:hover:leading-[1.5rem]
           mb-14 md:mb-0
           btn-gradient
           transition-all
           duration-300
            ">Join Discord</a>
           <button class="flex justify-evenly items-center w-60 h-14">
-            <a href="https://discord.gg/portalverse" target="_blank" class="hover:text-xl transition-all 
+            <a href="https://medium.com/@PORTALVERSE_NETWORK" target="_blank" class="sm:hover:text-xl transition-all 
           duration-300">Read
               Whitepaper</a>
             <div class="">
-              <a href="https://discord.gg/portalverse" target="_blank" class="hover:text-xl transition-all 
+              <a href="https://medium.com/@PORTALVERSE_NETWORK" target="_blank" class="sm:hover:text-xl transition-all 
           duration-300"><img src="@/assets/svg/RightArrow.svg "></a>
 
             </div>

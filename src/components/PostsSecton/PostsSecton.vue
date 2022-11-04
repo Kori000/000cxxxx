@@ -18,7 +18,7 @@
               v-for="i, index in homeInfo.blogs">
               <div class="sm:w-[554px] w-[346px] sm:h-[298px] h-[186px] relative rounded-2xl overflow-hidden">
                 <img :src="i.cover_image
-                " class="hover:scale-125  transition-all
+                " class="sm:hover:scale-125  transition-all
           duration-500">
                 <img src="../../assets/blog-line.png" class="absolute -bottom-[2px] left-0 ">
               </div>
@@ -33,7 +33,7 @@
 
           </div>
           <div id="link-btn"
-            class="w-[281px] h-[64px] bg-Blog-btn-border relative leading-5 hover:btn-gradient hover:cursor-pointer hover:btn-gradient hover:rounded-[20px] sm:mt-0 -mt-12 reval-bottommove-Blog2">
+            class="w-[281px] h-[64px] bg-Blog-btn-border relative leading-5 sm:hover:btn-gradient sm:hover:cursor-pointer sm:hover:btn-gradient sm:hover:rounded-[20px] sm:mt-0 -mt-12 reval-bottommove-Blog2">
             <svg width="281" height="65" viewBox="0 0 281 65" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.5" y="1" width="280" height="63" rx="19.5" fill="url(#paint0_linear_2707_3007)"
                 fill-opacity="0.1" stroke="url(#paint1_linear_2707_3007)" />
@@ -52,7 +52,7 @@
               </defs>
             </svg>
             <a href="https://medium.com/@PORTALVERSE_NETWORK" target="_blank"
-              class="w-full h-full leading-[64px] text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold font-Inter hover:text-xl transition-all hover:leading-[64px] select-none">Browse
+              class="w-full h-full leading-[64px] text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold font-Inter sm:hover:text-xl transition-all sm:hover:leading-[64px] select-none">Browse
               Articles
             </a>
           </div>

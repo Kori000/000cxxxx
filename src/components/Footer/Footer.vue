@@ -6,9 +6,9 @@
       <div id="left" class="flex flex-col justify-around sm:mt-0 mt-6">
         <div id="logo-box" class="flex justify-start items-center md:mt-7 ">
           <div class="m-2">
-            <img src="../../assets/footer-img-union.png">
+            <img src="../../assets/svg/footer-img-union.svg">
           </div>
-          <img src="../../assets/footer-img-text.png" class="md:w-auto md:h-auto w-[119px] h-[12px]">
+          <img src="../../assets/svg/footer-img-text.svg" class="md:w-auto md:h-auto w-[119px] h-[12px]">
         </div>
         <p class="hidden md:block font-semibold leading-[19px] my-5">Portalverse Network 2022. All rights reserved.</p>
       </div>

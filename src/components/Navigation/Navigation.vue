@@ -26,7 +26,7 @@
         <i class="fa-brands fa-twitter text-3xl text-white custom-nav-right-hover"></i>
       </a>
       <a href="https://discord.gg/portalverse" target="_blank" class="mr-[30px] ">
-        <i class="fa-brands fa-discord text-3xl text-white custom-nav-right-hover"></i>
+        <i class="fa-brands fa-discord text-3xl text-white custom-nav-right-hover "></i>
       </a>
     </div>
   </div>
