@@ -1,15 +1,11 @@
 <template>
   <div class=" bg-black overflow-hidden ">
-    <!-- 背景组件 -->
     <div>
       <BackGround class="relative "></BackGround>
     </div>
-    <!-- 导航栏 -->
     <Navigation class="hidden sm:flex w-screen md:h-[104px] "></Navigation>
-    <!-- 移动端导航 -->
     <NavigationMd id="mdNav" class="sm:hidden w-screen h-[44px] "></NavigationMd>
 
-    <!-- 内容 -->
     <div class="container max-w-1440 mx-auto ">
       <HeroCenter class=""></HeroCenter>
       <MissionSection id="Vision" class="h-fit ">
@@ -25,7 +21,6 @@
       <NewsletterSection class=""></NewsletterSection>
     </div>
 
-    <!-- 页脚 -->
     <Footer class=" w-screen "></Footer>
   </div>
 </template>
@@ -54,7 +49,7 @@ import InvestorSection from "@/components/InvestorSection/InvestorSection.vue";
 // Blog
 import PostsSecton from "@/components/PostsSecton/PostsSecton.vue";
 // Games
-import Game from "@/components/Game/Game.vue";
+import Game from "@/components/Game/GameIndex.vue";
 // 分割线
 import CutLine from "@/components/CutLine.vue";
 // Get Updates
@@ -64,13 +59,13 @@ import Footer from "@/components/Footer/Footer.vue";
 
 // 获取页面信息API
 import { getHomeInfoAPI } from '@/api/home.js';
-import { reactive, ref } from "vue";
+import { ref } from "vue";
 
 const homeInfo = ref({})
 // 发起请求
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
-  homeInfo.value = res.data
+  homeInfo.value = res
 }
 getHomeInfo()
 </script>

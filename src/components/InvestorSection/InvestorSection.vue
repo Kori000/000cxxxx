@@ -78,19 +78,19 @@ onMounted(() => {
   scrollRev.reveal('.reval-bottommove-Inv0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1100,
+    delay: 1000,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Inv1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1200,
+    delay: 1100,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Inv2', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1300,
+    delay: 1200,
     distance: '130px',
   })
   

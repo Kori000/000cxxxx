@@ -22,7 +22,6 @@
         <i class="fa-brands fa-github text-3xl text-white custom-nav-right-hover"></i>
       </a>
       <a href="https://twitter.com/Portalverse_Net" target="_blank" class="mr-[30px] ">
-        <!-- <img src="@/assets/svg/Twitter.svg" alt="Twitter" class="w-[30px] h-[35px]"> -->
         <i class="fa-brands fa-twitter text-3xl text-white custom-nav-right-hover"></i>
       </a>
       <a href="https://discord.gg/portalverse" target="_blank" class="mr-[30px] ">

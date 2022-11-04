@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-32">
+  <div class="mb-32 sm:mt-26 md:mt-40">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col  lg:min-h-[830px] min-h-[353px]">
       <div class=" flex flex-col flex-wrap justify-between items-center max-w-[1275px] ">
         <h3

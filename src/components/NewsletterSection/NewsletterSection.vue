@@ -8,7 +8,7 @@
  * 
 -->
 <template>
-  <div class="md:mb-32 mb-0">
+  <div class="md:mb-32  mb-0">
     <div class="lg:mx-36 mx-12 flex justify-center items-center sm:min-h-[583px] min-h-[445px] ">
       <div
         class="w-[1172px] md:h-[383px] min-w-[374px] h-[315px] custom-email-gradient rounded-[20px] text-white flex flex-col justify-center items-center relative">

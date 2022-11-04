@@ -14,8 +14,10 @@
         <!-- web itemline 区域 -->
         <div id="timeline_box" class="hidden sm:block relative  min-w-[1182px] min-h-[765px]  items-center font-Inter">
           <!-- 中心线 -->
-          <img id="midline" src="../../assets/MidLine-Milstones.png"
-            class=" absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] reval-in-time h-[800px]">
+          <div>
+            <img id="midline" src="../../assets/MidLine-Milstones.png"
+              class=" absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] reval-in-time h-[800px] ">
+          </div>
           <!-- 左1 -->
           <!-- 四个都是 框div + 线img 组合 -->
           <div id="left-timeline-1" class="absolute top-11 -left-4 w-[619px] h-[224px] reval-bottommove-time0">

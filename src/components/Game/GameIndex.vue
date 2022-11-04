@@ -19,7 +19,7 @@
             <!-- 白框 -->
             <img src="../../assets/game-cart.png" class=" w-full h-full absolute top-0 left-0 " ref="whiteLine">
             <!-- 彩框 -->
-            <img src="../../assets/game-cart-hover.png" v-show="i.id === -1"
+            <img src="../../assets/game-cart-hover.png" v-show="i.show ? true : false"
               class=" w-full h-full absolute top-0 left-0 ">
             <div id="Game-box" class="w-[1078px] h-[368px]  flex justify-between flex-wrap relative">
               <!-- 游戏图片 -->
@@ -101,16 +101,22 @@ onMounted(() => {
 
 })
 // 深拷贝源数组
-const deepcopy = JSON.parse(JSON.stringify(porps.homeInfo.games))
+// const deepcopy = JSON.parse(JSON.stringify(porps.homeInfo.games))
 
-console.log(deepcopy)
+// console.log(deepcopy)
+// function mouseOver (index) {
+//   let item = porps.homeInfo.games[index]
+//   item.id = -1
+// }
+// function mouseLeave (index) {
+//   let item = porps.homeInfo.games[index]
+//   item.id = deepcopy[index].id
+// }
 function mouseOver (index) {
-  let item = porps.homeInfo.games[index]
-  item.id = -1
+  porps.homeInfo.games[index].show = true
 }
 function mouseLeave (index) {
-  let item = porps.homeInfo.games[index]
-  item.id = deepcopy[index].id
+  porps.homeInfo.games[index].show = null
 }
 
 </script>

@@ -1,12 +1,3 @@
-/*
- * @Author: Kori
- * @Date: 2022-10-28 17:15:36
- * @LastEditors: Kori
- * @LastEditTime: 2022-10-31 14:02:16
- * @FilePath: /portalverse_offcial/tailwind.config.cjs
- * @Description: 
- * 
- */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
