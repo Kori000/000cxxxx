@@ -29,7 +29,8 @@
           mb-14 md:mb-0
           btn-gradient
           transition-all
-          duration-300
+          ease-linear
+          duration-200w
            ">Join Discord</a>
           <button class="flex justify-evenly items-center w-60 h-14">
             <a href="https://medium.com/@PORTALVERSE_NETWORK" target="_blank" class="sm:hover:text-xl transition-all 

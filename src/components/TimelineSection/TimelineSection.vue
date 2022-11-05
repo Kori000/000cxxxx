@@ -14,9 +14,9 @@
         <!-- web itemline 区域 -->
         <div id="timeline_box" class="hidden sm:block relative  min-w-[1182px] min-h-[765px]  items-center font-Inter">
           <!-- 中心线 -->
-          <div>
+          <div class="h-[100px] reval-in-time">
             <img id="midline" src="../../assets/MidLine-Milstones.png"
-              class=" absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] reval-in-time h-[800px] ">
+              class=" absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]  h-[800px] ">
           </div>
           <!-- 左1 -->
           <!-- 四个都是 框div + 线img 组合 -->
@@ -116,8 +116,9 @@
         <div id="timeline_box"
           class="flex justify-center items-center relative sm:hidden w-screen min-w-[340px] min-h-[765px]  ">
           <!-- 中心线 -->
-          <img id="midline" src="../../assets/MidLine-Milstones.png"
-            class="absolute top-[60%] left-12 -translate-y-1/2  reval-in h-[890px]">
+          <div class="absolute top-0 left-12 pt-4 reval-in-time h-[590px] ">
+            <img id="midline" src="../../assets/MidLine-Milstones.png" class=" h-[890px] ">
+          </div>
           <!-- 1 -->
           <div id="left-md-1"
             class="absolute w-[619px] h-[224px] top-[64px] left-[2.35rem] flex items-center reval-bottommove-time0">
@@ -142,7 +143,7 @@
           </div>
           <!-- 2 -->
           <div id="left-md-2"
-            class="absolute w-[619px] h-[224px] top-[262] left-[2.35rem] flex items-center reval-bottommove-time1">
+            class="absolute w-[619px] h-[224px] top-[262] left-[2.35rem] flex items-center reval-bottommove-time1 mb-5">
             <img src="../../assets/Line-Milstones-left-md.png" class="absolute left-0 top-1/2 translate-y-[-50%]">
             <div
               class="w-[70vw] h-[160px] mb-5 absolute left-[57px] bg-Rectangle sm:hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[160px]  flex justify-start items-center ">
@@ -164,7 +165,7 @@
           </div>
           <!-- 3 -->
           <div id="left-md-3"
-            class="absolute w-[619px] h-[224px] top-[460px] left-[2.35rem] flex items-center reval-bottommove-time2">
+            class="absolute w-[619px] h-[224px] top-[460px] left-[2.35rem] flex items-center reval-bottommove-time2 ">
             <img src="../../assets/Line-Milstones-left-md.png" class="absolute left-0 top-1/2 translate-y-[-50%]">
             <div
               class="w-[70vw] h-[160px] mb-5 absolute left-[57px] bg-Rectangle sm:hover:bg-Rectangle-hover custom-image-self text-white text-center leading-[160px]  flex justify-start items-center ">

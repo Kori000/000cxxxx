@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:mb-32 mb-16 md:pt-32 sm:mt-0 mt-44">
+  <div class="sm:mb-32 mb-16 md:pt-32 sm:mt-0 mt-44 ">
     <div class="lg:mx-36 md:mx-12  flex justify-center items-start flex-col min-h-screen py-5 px-2 ">
       <!-- custom-border-gradient -->
       <div id="border-line" class="relative  w-full rounded-3xl  px-[30px] flex justify-center items-start  ">
@@ -45,9 +45,9 @@
             </div>
           </div>
           <div id="bottom-card"
-            class=" w-full  flex flex-row justify-around flex-wrap items-center mt-16 sm:mt-28 font-Inter ">
-            <div v-for="i, index in cart" :class="'reval-bottommove-cart' + index"
-              class=" relative h-[356px] sm:w-[334px] w-full bg-[#2B2B2B5C] rounded-2xl filter shadow-xl flex justify-center items-center mb-9 sm:hover:-mt-8 ease-linear  transition-all duration-200 ">
+            class=" w-full  flex flex-row justify-around flex-wrap items-center mt-16  sm:mt-28 font-Inter ">
+            <div v-for="i, index in cart" :class="'reval-bottommove-cart' + index" class=" relative h-[356px] sm:w-[334px] w-full bg-[#2B2B2B5C] rounded-2xl filter shadow-xl flex justify-center items-center mb-9  sm:hover:-mt-[30px] sm:hover:mb-[66px]
+               ease-linear  transition-all duration-200 ">
               <div class=" absolute top-30 right-7  w-[200px] h-[246px] ">
                 <div class=" rounded-full bg-[#DC36F8] w-[72px] h-[68px] absolute top-0 left-0  filter blur-[53px] ">
                 </div>

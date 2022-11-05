@@ -10,8 +10,9 @@
         </div>
         <!-- web页游戏列表 -->
         <div id="Game-List"
-          class="hidden w-full h-[952px] lg:flex flex-col justify-between items-center reval-bottommove-Game1-0">
+          class="hidden w-full h-[952px] lg:flex flex-col justify-between items-center reval-bottommove-Game1-0 ">
           <div id="Game-cart" class=" w-full h-[443px] relative flex justify-center items-center 
+          
           " v-for="i, index in homeInfo.games" :key="index">
             <!-- 透明遮罩 -->
             <div class="z-30  w-full h-full absolute top-0 left-0" @mouseleave="mouseLeave(index)"
