@@ -178,7 +178,7 @@ onMounted(() => {
     // 动画的时长
     duration: 2600,
     // 延迟时间
-    delay: 1700,
+    delay: 1550,
     // 动画开始的位置，'bottom', 'left', 'top', 'right'
     origin: 'top',
   })

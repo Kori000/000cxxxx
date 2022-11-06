@@ -234,19 +234,19 @@ onMounted(() => {
   scrollRev.reveal('.reval-bottommove-time1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1200,
+    delay: 1100,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-time2', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1500,
+    delay: 1400,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-time3', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1800,
+    delay: 1700,
     distance: '130px',
   })
 })

@@ -52,31 +52,31 @@ onMounted(() => {
   scrollRev.reveal('.reval-bottommove-feature', {
     origin: 'bottom',
     duration: 1700,
-    delay: 900,
+    delay: 600,
     distance: '70px',
   })
   scrollRev.reveal('.reval-bottommove-feature0', {
     origin: 'bottom',
     duration: 1400,
-    delay: 1350,
+    delay: 1050,
     distance: '140px',
   })
   scrollRev.reveal('.reval-bottommove-feature1', {
     origin: 'bottom',
     duration: 1600,
-    delay: 1600,
+    delay: 1300,
     distance: '140px',
   })
   scrollRev.reveal('.reval-bottommove-feature2', {
     origin: 'bottom',
     duration: 1850,
-    delay: 1900,
+    delay: 1600,
     distance: '140px',
   })
   scrollRev.reveal('.reval-bottommove-feature3', {
     origin: 'bottom',
     duration: 1850,
-    delay: 2100,
+    delay: 1900,
     distance: '140px',
   })
 })

@@ -18,7 +18,7 @@
             </div>
             <div id="top-content-right"
               class="mt-7 xl:mt-0 sm:max-w-[438pxs] max-w-[315pxs] flex flex-col items-center reval-bottommove2 ">
-              <svg width="432" height="2" class="mb-4" viewBox="0 0 432 2" fill="none"
+              <svg height="2" class="mb-4 sm:w-[432px] w-[282px]" viewBox="0 0 432 2" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <line y1="1" x2="432" y2="1" stroke="url(#paint0_linear_2687_2153)" />
                 <defs>

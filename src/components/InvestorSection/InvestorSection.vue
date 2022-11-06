@@ -9,7 +9,7 @@
             Partners</h3>
         </div>
         <div id="sponsor" class=" lg:w-[940px] lg:h-[1133px]  flex flex-col  md:justify-between items-center ">
-          <!-- 上方Investors -->
+          <!-- webInvestors -->
           <div id="Investors"
             class="hidden w-[600px] lg:w-full mb-14 md:flex justify-between flex-wrap lg:flex-nowrap reval-bottommove-Inv0  ">
             <div
@@ -46,7 +46,7 @@
           </div>
 
           <!-- 中线 -->
-          <img id="line" class="w-full mb-14 reval-bottommove-Inv1" src="../../assets/sponsor-line.png">
+          <img id="line" class="sm:w-full w-[362px] mb-14 reval-bottommove-Inv1" src="../../assets/sponsor-line.png">
 
           <!-- 下方Partners -->
           <div id="Partners"
@@ -73,18 +73,18 @@ onMounted(() => {
   scrollRev.reveal('.reval-in-Inv', {
     origin: 'bottom',
     duration: 1700,
-    delay: 900,
+    delay: 700,
   })
   scrollRev.reveal('.reval-bottommove-Inv0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1000,
+    delay: 800,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Inv1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1100,
+    delay: 1000,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Inv2', {
@@ -93,7 +93,7 @@ onMounted(() => {
     delay: 1200,
     distance: '130px',
   })
-  
+
 })
 
 </script>
