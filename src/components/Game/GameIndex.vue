@@ -1,18 +1,19 @@
 <template>
-  <div class="pt-32 mb-32">
+  <div class="pt-32 ">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col h-full ">
-      <div class="w-[1149px] h-[1118px] flex flex-col justify-between items-center">
+      <div class="w-[1149px] flex flex-col justify-between items-center">
         <div id="Title">
           <h3
-            class=" sm:text-[55px]  text-[35px] font-semibold leading-[66px] linear-color animate-linear-color-animat font-Inter-700 reval-bottommove-Game0">
+            class=" sm:text-[55px]  text-[35px] font-semibold leading-[66px] linear-color animate-linear-color-animat font-Inter-700 reval-bottommove-Game0  mb-12">
             Incubated Games
           </h3>
         </div>
         <!-- web页游戏列表 -->
         <div id="Game-List"
-          class="hidden w-full h-[952px] lg:flex flex-col justify-between items-center reval-bottommove-Game1-0 ">
-          <div id="Game-cart" class=" w-full h-[443px] relative flex justify-center items-center 
-          
+          class="hidden w-full lg:flex flex-col justify-between items-center reval-bottommove-Game1-0 ">
+          <div id="Game-cart" class=" w-full h-[443px] relative flex justify-center items-center  mb-20
+          transition-all duration-200
+          sm:hover:-mt-[10px] sm:hover:mb-[90px]
           " v-for="i, index in homeInfo.games" :key="index">
             <!-- 透明遮罩 -->
             <div class="z-30  w-full h-full absolute top-0 left-0" @mouseleave="mouseLeave(index)"
@@ -43,7 +44,7 @@
 
         <!-- lg以下游戏列表 -->
         <div id="Game-List"
-          class="lg:hidden w-[340px] h-[952px] flex flex-col justify-between items-center reval-bottommove-Game1-0">
+          class="lg:hidden w-[340px]  flex flex-col justify-between items-center reval-bottommove-Game1-0">
           <div id="Game-cart" class=" w-full h-[480px] relative flex flex-col justify-start items-center mb-14"
             v-for="i, index in homeInfo.games" :key="index">
             <!-- web端边框 -->
@@ -84,7 +85,7 @@ onMounted(() => {
   scrollRev.reveal('.reval-bottommove-Game0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 500,
+    delay: 700,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Game1-0', {

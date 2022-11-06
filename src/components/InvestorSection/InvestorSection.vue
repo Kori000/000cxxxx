@@ -8,12 +8,12 @@
             Investors and
             Partners</h3>
         </div>
-        <div id="sponsor" class=" lg:w-[940px] lg:h-[1133px]  flex flex-col  md:justify-between items-center ">
+        <div id="sponsor" class=" lg:w-[940px]   flex flex-col  md:justify-between items-center ">
           <!-- webInvestors -->
           <div id="Investors"
-            class="hidden w-[600px] lg:w-full mb-14 md:flex justify-between flex-wrap lg:flex-nowrap reval-bottommove-Inv0  ">
+            class="hidden w-[600px] lg:w-full mb-14 md:flex lg:justify-around justify-between flex-wrap reval-bottommove-Inv0  ">
             <div
-              class=" w-[142px] md:w-[245px] h-[49px] md:h-full flex  lg:flex-col justify-center lg:justify-between items-center mx-3 mb-5 "
+              class=" w-[142px] md:w-[245px] h-[49px] md:h-[223px] flex lg:flex-col justify-center lg:justify-between items-center mx-3 mb-5 "
               v-for="i in homeInfo.investors">
               <!-- icon -->
               <div
