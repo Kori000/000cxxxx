@@ -25,7 +25,7 @@
         </div>
         <div id="btn_com"
           class=" flex mt-12 font-bold text-lg md:flex-row flex-col md:items-start items-center font-Inter-700">
-          <a href="https://discord.gg/portalverse" target="_blank" class="flex justify-center items-center w-72 h-16 rounded-[20px] mr-2 sm:hover:text-2xl sm:hover:leading-[1.5rem]
+          <a href="https://discord.com/invite/ppESW6FP43" target="_blank" class="flex justify-center items-center w-72 h-16 rounded-[20px] mr-2 sm:hover:text-2xl sm:hover:leading-[1.5rem]
           mb-14 md:mb-0
           btn-gradient
           transition-all

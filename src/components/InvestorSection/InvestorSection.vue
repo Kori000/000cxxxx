@@ -11,13 +11,13 @@
         <div id="sponsor" class=" lg:w-[940px]   flex flex-col  md:justify-between items-center ">
           <!-- webInvestors -->
           <div id="Investors"
-            class="hidden w-[600px] lg:w-full mb-14 md:flex lg:justify-around justify-between flex-wrap reval-bottommove-Inv0  ">
+            class="hidden w-[600px] lg:w-full mb-14 md:flex lg:justify-between justify-between flex-wrap reval-bottommove-Inv0  ">
             <div
-              class=" w-[142px] md:w-[245px] h-[49px] md:h-[223px] flex lg:flex-col justify-center lg:justify-between items-center mx-3 mb-5 "
+              class=" w-[142px] md:w-[205px]  h-[49px] md:h-[223px] flex lg:flex-col justify-center lg:justify-between items-center mx-3 mb-5 "
               v-for="i in homeInfo.investors">
               <!-- icon -->
               <div
-                class="w-[100px] h-[100px] lg:w-[121px] lg:h-[121px]  bg-Union-md custom-image-self lg:bg-Union relative ">
+                class="min-w-[100px] h-[100px] lg:w-[121px] lg:h-[121px]  bg-Union-md custom-image-self lg:bg-Union relative ">
                 <img :src="i.logo_image
                 " class="absolute -right-[3px] bottom-[3px] w-[67px] h-[67px]">
               </div>

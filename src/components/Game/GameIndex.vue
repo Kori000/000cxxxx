@@ -4,7 +4,7 @@
       <div class="w-[1149px] flex flex-col justify-between items-center">
         <div id="Title">
           <h3
-            class=" sm:text-[55px]  text-[35px] font-semibold leading-[66px] linear-color animate-linear-color-animat font-Inter-700 reval-bottommove-Game0  mb-12">
+            class=" sm:text-[55px]  text-[35px] font-semibold leading-[66px] linear-color animate-linear-color-animat font-Inter-700 reval-bottommove-Game0  sm:mb-24 mb-12">
             Incubated Games
           </h3>
         </div>
@@ -102,18 +102,8 @@ onMounted(() => {
   })
 
 })
-// 深拷贝源数组
-// const deepcopy = JSON.parse(JSON.stringify(porps.homeInfo.games))
 
-// console.log(deepcopy)
-// function mouseOver (index) {
-//   let item = porps.homeInfo.games[index]
-//   item.id = -1
-// }
-// function mouseLeave (index) {
-//   let item = porps.homeInfo.games[index]
-//   item.id = deepcopy[index].id
-// }
+// 动态绑定 hover 逻辑
 function mouseOver (index) {
   porps.homeInfo.games[index].show = true
 }

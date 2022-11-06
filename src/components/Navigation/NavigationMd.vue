@@ -9,13 +9,13 @@
     </div>
     <div id="Links" class=" w-[290px]  flex justify-end items-center  pl-[20px] flex-[1]">
       <a href="https://github.com/Portalverse-Network" target="_blank" class="mr-[30px] ">
-        <i class="fa-brands fa-github text-2xl text-white  text-white custom-nav-right-hover"></i>
+        <i class="fa-brands fa-github text-2xl  text-white custom-nav-right-hover"></i>
       </a>
       <a href="https://twitter.com/Portalverse_Net" target="_blank" class="mr-[30px]">
-        <i class="fa-brands fa-twitter text-2xl text-white text-white custom-nav-right-hover"></i>
+        <i class="fa-brands fa-twitter text-2xl text-white custom-nav-right-hover"></i>
       </a>
-      <a href="https://discord.gg/portalverse" target="_blank" class="mr-[30px]">
-        <i class="fa-brands fa-discord text-2xl text-white text-white custom-nav-right-hover"></i>
+      <a href="https://discord.com/invite/ppESW6FP43" target="_blank" class="mr-[30px]">
+        <i class="fa-brands fa-discord text-2xl text-white custom-nav-right-hover"></i>
       </a>
     </div>
   </div>
