@@ -85,6 +85,7 @@ const homeInfo = ref({})
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
   homeInfo.value = res.data
+  console.log(res.data)
 }
 getHomeInfo()
 </script>

@@ -21,17 +21,17 @@
             id="Game-cart"
             class=" w-full h-[443px] relative flex justify-center items-center  mb-20
           transition-all duration-200
-          sm:hover:-mt-[10px] sm:hover:mb-[90px]
+          cursor-pointer
           "
             v-for="i, index in homeInfo.games"
             :key="index"
           >
             <!-- 透明遮罩 -->
-            <div
+            <!-- <div
               class="z-30  w-full h-full absolute top-0 left-0"
               @mouseleave="mouseLeave(index)"
               @mouseover="mouseOver(index)"
-            ></div>
+            ></div> -->
             <!-- 白框 -->
             <img
               src="../../assets/game-cart.png"
@@ -39,11 +39,11 @@
               ref="whiteLine"
             >
             <!-- 彩框 -->
-            <img
+            <!-- <img
               src="../../assets/game-cart-hover.png"
               v-show="i.show ? true : false"
               class=" w-full h-full absolute top-0 left-0 "
-            >
+            > -->
             <div
               id="Game-box"
               class="w-[1078px] h-[368px]  flex justify-between flex-wrap relative"
@@ -150,31 +150,31 @@ onMounted(() => {
   scrollRev.reveal('.reval-bottommove-Game0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 700,
+    delay: 500,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Game1-0', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1200,
+    delay: 900,
     distance: '130px',
   })
   scrollRev.reveal('.reval-bottommove-Game1-1', {
     origin: 'bottom',
     duration: 1700,
-    delay: 1200,
+    delay: 1000,
     distance: '130px',
   })
 
 })
 
 // 动态绑定 hover 逻辑
-function mouseOver (index) {
-  porps.homeInfo.games[index].show = true
-}
-function mouseLeave (index) {
-  porps.homeInfo.games[index].show = null
-}
+// function mouseOver (index) {
+//   porps.homeInfo.games[index].show = true
+// }
+// function mouseLeave (index) {
+//   porps.homeInfo.games[index].show = null
+// }
 
 </script>
 

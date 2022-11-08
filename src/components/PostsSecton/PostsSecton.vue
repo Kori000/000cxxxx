@@ -1,10 +1,10 @@
 <template>
-  <div class="lg:mb-80 mb-0 pt-32 sm:pt-0 sm:min-h-[1200px]">
+  <div class="lg:mb-36 mb-0  sm:pt-0 sm:min-h-[800px]">
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col  ">
       <div class="xl:w-[1148px] flex flex-col justify-between">
         <div
           id="title"
-          class="flex flex-col justify-between items-center pt-[130px]"
+          class="flex flex-col justify-between items-center sm:pt-[130px]"
         >
           <div class="mb-5 ">
             <h5 class="sm:text-[22px] text-base leading-[26px] text-white font-Inter reval-in-Blog">Blog</h5>
@@ -134,7 +134,7 @@ defineProps(['homeInfo'])
 const scrollRev = scrollReveal()
 onMounted(() => {
   scrollRev.reveal('.reval-in-Blog', {
-    origin: 'right',
+    origin: 'bottom',
     duration: 1600,
     delay: 500,
     distance: '80px',
