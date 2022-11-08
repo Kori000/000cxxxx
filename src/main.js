@@ -6,6 +6,9 @@ import { createPinia } from 'pinia';
 import scrollreveal from "scrollreveal";
 
 
+
+
+
 const pinia = createPinia()
 
 const app = createApp(App)

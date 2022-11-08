@@ -27,37 +27,89 @@
           beta
           projects
         </h5>
+
         <div
-          id="Email-Signup"
-          class=" md:h-[112px]  flex justify-around  items-center z-10 md:flex-nowrap flex-wrap mb-3 font-Inter"
+          id="mc_embed_signup"
+          class="md:h-[112px]  flex justify-around  items-center z-10 md:flex-nowrap flex-wrap mb-3 font-Inter"
         >
-          <div class="sm:w-[358px] w-[312px] h-[64px] md:mr-5">
-            <!-- align-self: stretch;可以与flex元素共高 -->
-            <input
-              type="text"
-              class="w-full h-[64px] rounded-2xl bg-[#342A38] text-[#DCDCDCCC] font-medium pl-4 outline-none "
-              placeholder="Enter your email"
-            >
-          </div>
-          <div
-            class="md:w-[281px] w-[312px] h-[64px] rounded-[20px] border flex justify-center items-center hover:text-black hover:bg-white cursor-pointer active:bg-transparent  active:text-white md:mt-0 mt-5 md:bg-transparent bg-white md:text-white text-black "
-            @click="subscribeBtn"
+          <form
+            action="https://portalverse.us13.list-manage.com/subscribe/post?u=09cd99e29edef3146a8d05cb1&amp;id=381d4ba567&amp;f_id=00b4e3e2f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
           >
-            <div class="font-bold text-lg  text-center select-none">Subscribe</div>
-          </div>
+            <div
+              id="mc_embed_signup_scroll"
+              class="md:h-[112px]  flex justify-around  items-center z-10 md:flex-nowrap flex-wrap mb-3 font-Inter"
+            >
+              <div class="mc-field-group sm:w-[358px] w-[312px] h-[64px] md:mr-5">
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email w-full h-[64px] rounded-2xl bg-[#342A38] text-[#DCDCDCCC] font-medium pl-4 outline-none "
+                  id="mce-EMAIL"
+                  placeholder="Enter your email"
+                  required
+                >
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div
+                style="position: absolute; left: -5000px;"
+                aria-hidden="true"
+              ><input
+                  type="text"
+                  name="b_09cd99e29edef3146a8d05cb1_381d4ba567"
+                  tabindex="-1"
+                  value=""
+                ></div>
+              <div class="optionalParent">
+                <div class="clear foot font-bold text-xl">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="button   md:w-[281px] w-[312px] h-[64px] rounded-[20px] border flex justify-center items-center hover:text-black hover:bg-white cursor-pointer active:bg-transparent  active:text-white md:mt-0 mt-5 md:bg-transparent bg-white md:text-white text-black font-bold text-xl  text-center select-none "
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+
+
+
   </div>
+
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import scrollReveal from 'scrollreveal';
+// import "@/api/email.js";
 function subscribeBtn () {
   alert('Function not enabled')
 }
 const scrollRev = scrollReveal()
+const email = ref('')
+function subscribe (email) {
+  // subscribeEmail(email)
+  let reg = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-z]{2,4})$/
+  const validate = reg.test(email)
+  if (!validate) {
+    return
+  }
+  const res = subscribeEmail(email)
+  console.log(res)
+
+}
+
 onMounted(() => {
   scrollRev.reveal('.reval-news-in', {
     origin: 'bottom',

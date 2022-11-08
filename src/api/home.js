@@ -4,3 +4,4 @@ import request from '@/utils/request';
 export const getHomeInfoAPI = () => request({
   url: '/api/home/all',
 })
+
