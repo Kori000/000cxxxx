@@ -4,19 +4,38 @@
       <BackGround class="relative "></BackGround>
     </div>
     <Navigation class="hidden sm:flex w-screen md:h-[104px] "></Navigation>
-    <NavigationMd id="mdNav" class="sm:hidden w-screen h-[44px] "></NavigationMd>
+    <NavigationMd
+      id="mdNav"
+      class="sm:hidden w-screen h-[44px] "
+    ></NavigationMd>
 
     <div class="container max-w-1440 mx-auto ">
       <HeroCenter class=""></HeroCenter>
-      <MissionSection id="Vision" class="h-fit ">
+      <MissionSection
+        id="Vision"
+        class="h-fit "
+      >
         <div class="hidden sm:block bg-Mission-border-line custom-image-self w-full h-full absolute reval-in"></div>
         <div class="block sm:hidden bg-Mission-border-line-md custom-image-self w-full h-full absolute reval-in"></div>
       </MissionSection>
-      <PlayerBenefits id="Features" class=""></PlayerBenefits>
-      <TimelineSection id="Milestones" class=""></TimelineSection>
+      <PlayerBenefits
+        id="Features"
+        class=""
+      ></PlayerBenefits>
+      <TimelineSection
+        id="Milestones"
+        class=""
+      ></TimelineSection>
       <InvestorSection :homeInfo="homeInfo"></InvestorSection>
-      <PostsSecton id="Blog" :homeInfo="homeInfo"></PostsSecton>
-      <Game id="Game" :homeInfo="homeInfo" class=""></Game>
+      <PostsSecton
+        id="Blog"
+        :homeInfo="homeInfo"
+      ></PostsSecton>
+      <Game
+        id="Game"
+        :homeInfo="homeInfo"
+        class=""
+      ></Game>
       <CutLine></CutLine>
       <NewsletterSection class=""></NewsletterSection>
     </div>
@@ -65,7 +84,7 @@ const homeInfo = ref({})
 // 发起请求
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
-  homeInfo.value = res
+  homeInfo.value = res.data
 }
 getHomeInfo()
 </script>

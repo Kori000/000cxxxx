@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:mb-32 mb-16 md:pt-32 sm:mt-0 mt-44 ">
+  <div class="sm:mb-48   mb-16 md:pt-32 sm:mt-0 mt-44 ">
     <div class="lg:mx-36 md:mx-12  flex justify-center items-start flex-col min-h-screen py-5 px-2 ">
       <!-- custom-border-gradient -->
       <div

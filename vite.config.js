@@ -29,6 +29,15 @@ export default defineConfig({
     },
 
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://ec2-18-138-239-39.ap-southeast-1.compute.amazonaws.com",
+        changeOrigin: true,
+        // rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
   // server: {
   //   host: '0.0.0.0',
   //   port: '7777'

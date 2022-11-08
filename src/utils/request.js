@@ -2,7 +2,9 @@ import theAxios from 'axios';
 
 const axios = theAxios.create({
   // baseURL: 'http://192.168.0.100:8080',
-  baseURL: 'http://127.0.0.1:4523/m1/1854581-0-default',
+  // baseURL: 'http://127.0.0.1:4523/m1/1854581-0-default',
+  baseURL: `http://${document.location.host}`,
+  // baseURL: 'http://ec2-18-138-239-39.ap-southeast-1.compute.amazonaws.com',
   timeout: 20000
 })
 
