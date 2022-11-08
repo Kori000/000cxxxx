@@ -20,17 +20,21 @@
           <div
             id="Game-cart"
             class=" w-full h-[443px] relative flex justify-center items-center  mb-20
-          transition-all duration-200
-          cursor-pointer
+          transition-all duration-200 
+          
           "
             v-for="i, index in homeInfo.games"
+            :class="index === 0 ? 'sm:hover:-mt-[10px] sm:hover:mb-[90px] cursor-pointer' : ''"
             :key="index"
           >
             <!-- 透明遮罩 -->
             <a
+              v-if="index === 0"
               :href="i.url"
               target="_blank"
               class="z-30  w-full h-full absolute top-0 left-0"
+              @mouseleave="mouseLeave(index)"
+              @mouseover="mouseOver(index)"
             ></a>
             <!-- 白框 -->
             <img
@@ -39,11 +43,11 @@
               ref="whiteLine"
             >
             <!-- 彩框 -->
-            <!-- <img
+            <img
               src="../../assets/game-cart-hover.png"
               v-show="i.show ? true : false"
               class=" w-full h-full absolute top-0 left-0 "
-            > -->
+            >
             <div
               id="Game-box"
               class="w-[1078px] h-[368px]  flex justify-between flex-wrap relative"
@@ -102,6 +106,13 @@
               class="block sm:hidden w-full h-full absolute top-0 left-0 "
               ref="whiteLine"
             >
+            <!-- 透明遮罩 -->
+            <a
+              v-if="index === 0"
+              :href="i.url"
+              target="_blank"
+              class="z-30  w-full h-full absolute top-0 left-0"
+            ></a>
             <div
               id="Game-box"
               class="w-[310px] h-full flex flex-col justify-start  relative"
@@ -169,12 +180,12 @@ onMounted(() => {
 })
 
 // 动态绑定 hover 逻辑
-// function mouseOver (index) {
-//   porps.homeInfo.games[index].show = true
-// }
-// function mouseLeave (index) {
-//   porps.homeInfo.games[index].show = null
-// }
+function mouseOver (index) {
+  porps.homeInfo.games[index].show = true
+}
+function mouseLeave (index) {
+  porps.homeInfo.games[index].show = null
+}
 
 </script>
 
