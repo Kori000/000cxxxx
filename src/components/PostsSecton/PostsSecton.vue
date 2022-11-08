@@ -21,19 +21,26 @@
         >
           <div
             id="blog-main-content"
-            class="w-full flex lg:justify-between justify-center items-start flex-wrap relative lg:mb-20 reval-in-Blog"
+            class="w-full flex lg:justify-between justify-center items-start flex-wrap relative lg:mb-20 "
           >
             <div
-              class=" w-[554px]  flex flex-col justify-between items-center z-10 lg:mb-0 sm:mb-20 relative sm:mt-[60px]"
+              class=" w-[554px]  flex flex-col justify-between items-center z-10 lg:mb-0 sm:mb-20 relative sm:mt-[60px] "
+              :class="'reval-bottommove-Blog' + (index + 1)"
               v-for="i, index in homeInfo.blogs"
             >
-              <div class="sm:w-[554px] w-[346px] sm:h-[298px] h-[186px] relative rounded-2xl overflow-hidden">
-                <img
-                  :src="i.cover_image
-                  "
-                  class="sm:hover:scale-125  transition-all
-          duration-500"
+              <div class="sm:w-[554px] w-[346px] sm:h-[298px] h-[186px] relative rounded-2xl overflow-hidden ">
+                <a
+                  :href="i.url"
+                  target="_blank"
                 >
+                  <img
+                    :src="i.cover_image
+                    "
+                    class="sm:hover:scale-125  transition-all
+                  
+          duration-500"
+                  >
+                </a>
                 <img
                   src="../../assets/blog-line.png"
                   class="absolute -bottom-[2px] left-0 "
@@ -130,8 +137,10 @@
 import { onMounted } from 'vue';
 import scrollReveal from 'scrollreveal';
 import CutLineMd from "@/components/CutLineMd.vue";
+
 defineProps(['homeInfo'])
 const scrollRev = scrollReveal()
+
 onMounted(() => {
   scrollRev.reveal('.reval-in-Blog', {
     origin: 'bottom',
@@ -139,7 +148,6 @@ onMounted(() => {
     delay: 500,
     distance: '80px',
   })
-
   scrollRev.reveal('.reval-bottommove-Blog0', {
     origin: 'bottom',
     duration: 1200,
@@ -147,20 +155,23 @@ onMounted(() => {
     distance: '60px',
   })
   scrollRev.reveal('.reval-bottommove-Blog1', {
-    origin: 'bottom',
+    origin: 'right',
     duration: 1900,
     delay: 1000,
     distance: '60px',
   })
+
   scrollRev.reveal('.reval-bottommove-Blog2', {
-    origin: 'bottom',
+    origin: 'right',
     duration: 1700,
-    delay: 800,
+    delay: 1350,
     distance: '60px',
   })
+
 })
 
 
 
-</script>
 
+
+</script>

@@ -27,11 +27,11 @@
             :key="index"
           >
             <!-- 透明遮罩 -->
-            <!-- <div
+            <a
+              :href="i.url"
+              target="_blank"
               class="z-30  w-full h-full absolute top-0 left-0"
-              @mouseleave="mouseLeave(index)"
-              @mouseover="mouseOver(index)"
-            ></div> -->
+            ></a>
             <!-- 白框 -->
             <img
               src="../../assets/game-cart.png"

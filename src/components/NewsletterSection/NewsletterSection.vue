@@ -55,7 +55,7 @@
 import { onMounted } from 'vue';
 import scrollReveal from 'scrollreveal';
 function subscribeBtn () {
-  alert('功能未开启')
+  alert('Function not enabled')
 }
 const scrollRev = scrollReveal()
 onMounted(() => {

@@ -80,7 +80,18 @@ import Footer from "@/components/Footer/Footer.vue";
 import { getHomeInfoAPI } from '@/api/home.js';
 import { ref } from "vue";
 
-const homeInfo = ref({})
+const homeInfo = ref({
+  "investors": [],
+  "partners": [],
+  "blogs": [
+    {},
+    {}
+  ],
+  "games": [
+    {},
+    {}
+  ]
+})
 // 发起请求
 async function getHomeInfo () {
   const { data: res } = await getHomeInfoAPI()
