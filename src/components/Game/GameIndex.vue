@@ -152,7 +152,7 @@
 </template>
 
 <script setup>
-
+// import * as EMA from "@/api/email.js";
 import { onMounted } from 'vue';
 import scrollReveal from 'scrollreveal';
 const porps = defineProps(['homeInfo'])
