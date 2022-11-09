@@ -1,12 +1,14 @@
 <template>
   <div>
+    <div class="streamer"></div>
     <div
       class="w-full md:h-[237px] sm:h-[70px] h-[40px] relative flex justify-around items-center text-white font-Inter "
     >
-      <img
+      <!-- <img
         src="../../assets/footer-line.png"
         class="object-contain w-full absolute top-0 left-1/2 -translate-x-1/2 "
-      >
+      > -->
+
       <div
         id="left"
         class="flex flex-col justify-around sm:mt-0 mt-6"

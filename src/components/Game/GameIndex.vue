@@ -24,12 +24,12 @@
           
           "
             v-for="i, index in homeInfo.games"
-            :class="index === 0 ? 'sm:hover:-mt-[10px] sm:hover:mb-[90px] cursor-pointer' : ''"
+            :class="i.url ? 'sm:hover:-mt-[10px] sm:hover:mb-[90px] cursor-pointer' : ''"
             :key="index"
           >
             <!-- 透明遮罩 -->
             <a
-              v-if="index === 0"
+              v-if="i.url"
               :href="i.url"
               target="_blank"
               class="z-30  w-full h-full absolute top-0 left-0"
@@ -108,7 +108,7 @@
             >
             <!-- 透明遮罩 -->
             <a
-              v-if="index === 0"
+              v-if="i.url"
               :href="i.url"
               target="_blank"
               class="z-30  w-full h-full absolute top-0 left-0"

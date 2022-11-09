@@ -67,7 +67,7 @@
                   value=""
                 ></div>
               <div class="optionalParent">
-                <div class="clear foot font-bold text-xl">
+                <div class="clear foot font-bold text-xly">
                   <input
                     type="submit"
                     value="Subscribe"

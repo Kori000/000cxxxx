@@ -31,7 +31,7 @@
               id="top-content-right"
               class="mt-7 xl:mt-0 sm:max-w-[438pxs] max-w-[315pxs] flex flex-col items-center reval-bottommove2 "
             >
-              <svg
+              <!-- <svg
                 height="2"
                 class="mb-4 sm:w-[432px] w-[282px]"
                 viewBox="0 0 432 2"
@@ -69,7 +69,9 @@
                     <stop offset="1" />
                   </linearGradient>
                 </defs>
-              </svg>
+              </svg> -->
+              <div class="streamer mb-4 sm:w-[432px] w-[282px]"></div>
+
               <h5
                 class="text-white font-medium text-xl text-center mt-6 xl:mt-0 mb-3 w-[325px] sm:w-[438px] min-h-[109px] font-Inter x"
               >

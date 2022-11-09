@@ -73,11 +73,13 @@
           </div>
 
           <!-- 中线 -->
-          <img
+          <!-- <img
             id="line"
             class="sm:w-full w-[362px] mb-14 reval-bottommove-Inv1"
             src="../../assets/sponsor-line.png"
-          >
+          > -->
+          <div class="streamer sm:w-full w-[362px] mt-4 mb-10 reval-bottommove-Inv1"></div>
+
 
           <!-- 下方Partners -->
           <div
