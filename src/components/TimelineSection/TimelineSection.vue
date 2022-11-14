@@ -3,7 +3,7 @@
     <div class=" lg:mx-36 mx-12 flex justify-center items-center flex-col min-h-screen ">
       <div
         id="container-box"
-        class=" h-[1024px] sm:w-[1182px] w-[340px] flex flex-col justify-center sm:justify-around items-center pb-[120px]"
+        class=" h-full sm:w-[1182px] w-[340px] flex flex-col justify-center sm:justify-around items-center pb-[120px]"
       >
         <!-- 上方标题 -->
         <div
@@ -12,7 +12,7 @@
         >
           <h5 class="text-xl leading-5 font-medium text-white text-center  font-Inter reval-bottommove">Milestones</h5>
           <h3
-            class="sm:text-6xl text-[2.1rem] font-semibold leading-10 mt-6 sm:leading-[3.75rem]  linear-color animate-linear-color-animat font-Inter-700 reval-bottommove1"
+            class="sm:text-6xl text-[2.1rem] font-semibold leading-10 mt-6 sm:leading-[3.75rem]  linear-color animate-linear-color-animat font-Inter-700 reval-bottommove1 md:mb-[70px]"
           >
             Roadmap to
             Market</h3>

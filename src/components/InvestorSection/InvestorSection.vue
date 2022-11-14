@@ -84,16 +84,16 @@
           <!-- 下方Partners -->
           <div
             id="Partners"
-            class=" flex md:justify-between justify-start flex-wrap md:pl-0 pl-[50px]  md:max-w-full max-w-[500px] reval-bottommove-Inv2 md:mt-[46px]"
+            class=" flex md:justify-between justify-start flex-wrap md:pl-0 pl-[50px]  md:max-w-full max-w-[500px] reval-bottommove-Inv2 md:mt-[16px]"
           >
             <div
-              class="md:w-[289px] w-[110px]  md:h-[204.66666667px] md:max-h-full max-h-[100px] flex justify-center items-center md:mx-0 m-3"
+              class="md:w-[289px] w-[110px]  md:h-[204.66666667px] md:max-h-full max-h-[100px] flex justify-center items-center md:mx-0 m-3 "
               v-for="i in homeInfo.partners"
             >
               <img
                 :src="i.logo_image
                 "
-                class="max-w-full max-h-full "
+                class="md:object-cover md:scale-[66%] scale-[95%]"
               >
             </div>
           </div>
