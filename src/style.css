@@ -216,7 +216,7 @@
 :root {
   --streamer-height: 1px;
   --streamer-color: #2196f3;
-  --streamer-duration: 2s;
+  --streamer-duration: 4s;
   --streamer-line-blur: 1/4;
   --streamer-shadow-blur: 2;
 }
