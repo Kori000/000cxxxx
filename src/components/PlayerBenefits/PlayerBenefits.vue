@@ -7,7 +7,7 @@
         >
           Features
         </h3>
-        <div class="flex justify-around  mt-20 sm:mt-40  mx-auto flex-wrap  xl:flex-nowrap">
+        <div class="flex justify-around  mt-20 sm:mt-[9rem]  mx-auto flex-wrap  lg:flex-nowrap">
           <div
             class="sm:h-[397px] mx-7  w-[354px] sm:w-[276px]  flex flex-row sm:flex-col  justify-between items-center mb-14 xl:mb-0"
             :class="'reval-bottommove-feature' + index"

@@ -12,7 +12,7 @@
         >
           <h5 class="text-xl leading-5 font-medium text-white text-center  font-Inter reval-bottommove">Milestones</h5>
           <h3
-            class="sm:text-6xl text-[2.1rem] font-semibold leading-10 mt-6 sm:leading-[3.75rem]  linear-color animate-linear-color-animat font-Inter-700 reval-bottommove1 md:mb-[70px]"
+            class="sm:text-6xl text-[2.1rem] font-semibold leading-10 mt-6 sm:leading-[3.75rem]  linear-color animate-linear-color-animat font-Inter-700 reval-bottommove1 md:mb-[80px]"
           >
             Roadmap to
             Market</h3>

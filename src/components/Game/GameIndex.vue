@@ -4,7 +4,7 @@
       <div class="w-[1149px] flex flex-col justify-between items-center">
         <div
           id="Title"
-          class="reval-bottommove-Game0"
+          class="reval-bottommove-Game0 mb-12"
         >
           <h3
             class=" sm:text-[55px]  text-[35px] font-semibold leading-[66px] linear-color animate-linear-color-animat font-Inter-700   sm:mb-24 mb-12"
@@ -90,7 +90,7 @@
         >
           <div
             id="Game-cart"
-            class=" w-full h-[480px] relative flex flex-col justify-start items-center mb-14"
+            class=" w-full h-[480px] relative flex flex-col justify-start items-center mb-14 "
             v-for="i, index in homeInfo.games"
             :key="index"
           >

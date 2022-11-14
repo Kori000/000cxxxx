@@ -10,7 +10,7 @@
             <h5 class="sm:text-[22px] text-base leading-[26px] text-white font-Inter reval-in-Blog">Blog</h5>
           </div>
           <h3
-            class=" sm:text-[55px] text-4xl  font-semibold sm:leading-[66px] leading-[43px] sm:max-w-full max-w-[231px] text-center linear-color animate-linear-color-animat font-Inter-700 reval-bottommove-Blog0  mb-20"
+            class=" sm:text-[55px] text-4xl  font-semibold sm:leading-[66px] leading-[43px] sm:max-w-full max-w-[231px] text-center linear-color animate-linear-color-animat font-Inter-700 reval-bottommove-Blog0  mb-[5.3rem]"
           >
             Stay
             updated on Portalverse</h3>
@@ -49,7 +49,7 @@
               <p
                 class=" lg:text-4xl sm:text-2xl text-xl font-medium sm:leading-10 leading-7 text-white lg:text-start sm:text-center text-start break-words max-w-[510px] sm:w-full w-[341px] lg:h-full  sm:h-[186px] font-Inter mt-9 ml-[19px]  ">
                 {{ i.title
-                
+
                 }}</p>
               <!-- lg分辨率以下出现分割线 -->
               <CutLineMd
