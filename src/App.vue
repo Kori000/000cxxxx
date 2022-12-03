@@ -8,7 +8,6 @@
  * 
 -->
 <script setup>
-import MainPage from '@/view/HomeScreen/IndexPage.vue'
 </script>
 
 <template>
@@ -16,5 +15,4 @@ import MainPage from '@/view/HomeScreen/IndexPage.vue'
 </template>
 
 <style scoped>
-
 </style>
